@@ -1,0 +1,89 @@
+
+*{
+    padding:0;
+    margin:0;
+     
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+.nav{
+    color: #009970;
+    font-size: 24px;
+    font-weight: 500;
+}
+.navbrand{
+   
+    width:100%;
+    margin:10px 0px 0px 0px;
+    background-color: rgb(212, 226, 221);
+    border-radius: 20px;
+   
+}
+.login-button{
+    
+    background-color: #009970;
+    font-size: 14px;
+    color:white;
+    padding:8px 20px;
+    border-radius: 50px;
+    border: none;
+    transition:o.3s background-color;
+}
+
+@media (max-width:992px) {
+    .login-button{
+        position:relative;
+        margin-top:10px;
+        padding:5px 3px
+        
+    }
+    
+}
+.login-button:hover{
+    background-color: #00b383;
+}
+
+.nav-link{
+    font-weight: 600;
+    position: relative;
+    color:#666777;
+}
+
+.links{
+    margin-right: 40vw;
+}
+
+.toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link:hover,.nav-link:active{
+    color:black;
+    
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width:0;
+    height:2.5px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 90%;
+    visibility: visible;
+}
