@@ -1,0 +1,210 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "hotels",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o="
+    },
+    {
+      "id": "2",
+      "name": "apartments",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/hotel/263x210/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o="
+    },
+    {
+      "id": "3",
+      "name": "resorts",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o="
+    },
+    {
+      "id": "4",
+      "name": "villas",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://q-xx.bstatic.com/xdata/images/hotel/263x210/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o="
+    },
+    {
+      "id": "5",
+      "name": "cabins",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/hotel/263x210/52979454.jpeg?k=6ac6d0afd28e4ce00a8f817cc3045039e064469a3f9a88059706c0b45adf2e7d&o="
+    },
+    {
+      "id": "6",
+      "name": "cottages",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450074.jpeg?k=7039b03a94f3b99262c4b3054b0edcbbb91e9dade85b6efc880d45288a06c126&o="
+    },
+    {
+      "id": "7",
+      "name": "vacation homes",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450113.jpeg?k=76b3780a0e4aacb9d02ac3569b05b3c5e85e0fd875287e9ac334e3b569f320c7&o="
+    },
+    {
+      "id": "8",
+      "name": "guest houses",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450073.jpeg?k=795a94c30433de1858ea52375e8190a962b302376be2e68aa08be345d936557d&o="
+    },
+    {
+      "id": "9",
+      "name": "hostels",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450082.jpeg?k=beb101b827a729065964523184f4db6cac42900c2415d71d516999af40beb7aa&o="
+    },
+    {
+      "id": "10",
+      "name": "motels",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450093.jpeg?k=aa5cc7703f3866af8ffd6de346c21161804a26c3d0a508d3999c11c337506ae1&o="
+    },
+    {
+      "id": "11",
+      "name": "resort villages",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450068.jpeg?k=41cc7c5449011323aaaaed4e845cb16200b5d540c77a50c1bea90399a1e92d70&o="
+    },
+    {
+      "id": "12",
+      "name": "home stays",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450066.jpeg"
+    }
+  ],
+  "role": [
+    {
+      "isAuth": false,
+      "admin": {},
+      "hotelOwner": {},
+      "user": {},
+      "id": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1578"
+    },
+    {
+      "id": "1",
+      "firstName": "Dipak",
+      "lastName": "Karmur",
+      "email": "meet@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dipak",
+      "lastName": "Karmur",
+      "email": "meet@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dipak",
+      "lastName": "Karmur",
+      "email": "meet@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dipak",
+      "lastName": "Karmur",
+      "email": "meet@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dip",
+      "lastName": "Karmur",
+      "email": "meet@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "vats",
+      "lastName": "bhatti",
+      "email": "meet@gmail.com",
+      "password": "Vats@123",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "dipak",
+      "lastName": "karmur",
+      "email": "meet@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "vatsal",
+      "lastName": "bhatti",
+      "email": "aisha@gmail.com",
+      "password": "As1@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "ddd",
+      "lastName": "dsa",
+      "email": "meet@gmail.com",
+      "password": "As123@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "ddd",
+      "lastName": "dsa",
+      "email": "meet@gmail.com",
+      "password": "Qw12@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "vats",
+      "lastName": "dsa",
+      "email": "meet@gmail.com",
+      "password": "As12@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dipak",
+      "lastName": "dsa",
+      "email": "meet@gmail.com",
+      "password": "Ds12@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dip",
+      "lastName": "dsa",
+      "email": "aisha@gmail.com",
+      "password": "As12@",
+      "savedHotels": []
+    },
+    {
+      "id": "1",
+      "firstName": "Dipak",
+      "lastName": "Karmur",
+      "email": "dipakkarmur45@gmail.com",
+      "password": "Ahir123@",
+      "savedHotels": []
+    },
+    {
+      "id": "2",
+      "firstName": "jay",
+      "lastName": "prajapati",
+      "email": "jay@gmail.com",
+      "password": "Jay@123",
+      "savedHotels": []
+    }
+  ]
+}
