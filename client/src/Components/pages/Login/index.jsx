@@ -3,8 +3,9 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { useNavigate, NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { getUsers } from "../../../utils/Axios/api";
+import { getUsers } from "../../../utils/Axios/RequestBuilder";
 import { toast } from "react-toastify";
+import { setRole } from "../../../Redux/Actions/roleActions";
 
 const loginSchema = yup.object({
   role: yup
@@ -47,8 +48,8 @@ function Login() {
       let user = users.find((user) => user.email === email);
       console.log(user);
       if (user && user.password === password) {
-        // dispatch(setRole(role, user));
-         toast.success(`User: ${user.name} logged in successfully`);
+         dispatch(setRole(role, user));
+         toast.success(`User: ${user.firstName} logged in successfully`);
         navigate("/");
       } else {
          toast.error("Invalid credential !!");

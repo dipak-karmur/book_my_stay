@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { NavLink, Navigate } from "react-router-dom";
-import { addUser, getUsers } from "../../../utils/Axios/api";
+import { addUser, getUsers } from "../../../utils/Axios/RequestBuilder";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../../Common/Loader";
 import { setLoader } from "../../../Redux/Actions/Actions";
