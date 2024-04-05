@@ -2,9 +2,13 @@ import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import "../../styles/Navbar.css";
+import { CgProfile } from "react-icons/cg";
+import { useSelector } from "react-redux";
 
 function Navbar() {
   const [burgerButton, setBurgerButton] = useState(false);
+  //const user = useSelector((state) => state.role.user.firstName);
+
   return (
     <>
       <nav className="bg-[#092332] border-gray-200 ">
@@ -81,7 +85,14 @@ function Navbar() {
               >
                 Contact
               </NavLink>
+             
             </ul>
+            {/* {user && !burgerButton? (
+                <button className="flex gap-1 justify-center items-center text-white bg-blue hover:bg-blue-400 rounded-full px-2 py-2 absolute right-2 top-6 ">
+                  <CgProfile size={20} />
+                  {user}
+                </button>
+              ) : null} */}
           </div>
         </div>
       </nav>

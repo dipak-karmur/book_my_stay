@@ -1,36 +1,117 @@
-import React from 'react'
-import { createBrowserRouter } from 'react-router-dom'
-import Layout from '../Components/layout/Layout'
-import Home from '../Components/Home'
-import UserRegister from '../Components/pages/Register/UserRegister'
-import Login from '../Components/pages/Login'
-import ErrorPage from '../Components/pages/ErrorPage'
+// import React from 'react'
+// import { createBrowserRouter } from 'react-router-dom'
+// import Layout from '../Components/layout/Layout'
+// import Home from '../Components/pages/Home'
+// import UserRegister from '../Components/pages/Register/UserRegister'
+// import Login from '../Components/pages/Login'
+// import ErrorPage from '../Components/pages/ErrorPage'
+// import UsersPrivateRoute from '../private-public-route/UsersPrivateRoute'
+// import { useSelector } from 'react-redux'
+// import HotelListing from '../Components/pages/HotelListing'
 
-export const Router = () =>{
+
+// export const Router = () =>{
+
+//     const role = useSelector((state)=> state.role);
+//     return createBrowserRouter([
+//         {
+//             element: <Layout/>,
+//             children:[
+//                 {
+//                     path:'/',
+//                     element:<Home/>
+//                 },
+//                 {
+//                     path:'/login',
+//                     element:<Login />
+//                 },
+//                 {
+//                     path:'/register',
+//                     element:<UserRegister/>
+//                 },
+//                 {
+//                     element: <UsersPrivateRoute isAuth={role.user !== null ? true : false} />,
+// 					children: [
+						
+// 						{
+// 							path: "/hotels",
+// 							element: <HotelListing />,
+// 						},
+						
+// 						// {
+// 						// 	path: "/saved",
+// 						// 	element: < />,
+// 						// },
+// 					],
+				
+//                 },
+//             ],
+            
+            
+//         },
+//         {
+//             path: "*",
+//             element: <ErrorPage />,
+//         },
+//     ])
+// }
+
+
+import React from 'react';
+import { createBrowserRouter } from 'react-router-dom';
+
+// Lazy load your components
+const Layout = React.lazy(() => import('../Components/layout/Layout'));
+const Home = React.lazy(() => import('../Components/pages/Home'));
+const UserRegister = React.lazy(() => import('../Components/pages/Register/UserRegister'));
+const Login = React.lazy(() => import('../Components/pages/Login'));
+const ErrorPage = React.lazy(() => import('../Components/pages/ErrorPage'));
+const UsersPrivateRoute = React.lazy(() => import('../private-public-route/UsersPrivateRoute'));
+const HotelListing = React.lazy(() => import('../Components/pages/HotelListing'));
+import { useSelector } from 'react-redux';
+import SavedHotels from '../Components/pages/SavedHotels';
+
+export const Router = () => {
+    const role = useSelector((state)=> state.role);
 
     return createBrowserRouter([
         {
-            element: <Layout/>,
-            children:[
-                {
-                    path:'/',
-                    element:<Home/>
-                },
-                {
-                    path:'/login',
-                    element:<Login />
-                },
-                {
-                    path:'/register',
-                    element:<UserRegister/>
-                },
-                
-            ],
             
-        },
-        {
-            path: "*",
-            element: <ErrorPage />,
-        },
-    ])
-}
+            element: <Layout/>,
+            children: [
+                {
+                    path: '/',
+                    element: <Home/>
+                },
+                {
+                    path: '/login',
+                    element: <Login />
+                },
+                {
+                    path: '/register',
+                    element: <UserRegister/>
+                },
+                {
+                  
+                    element: <UsersPrivateRoute isAuth={role.user !== null ? true : false} />,
+                    children: [
+                        {
+                            path: '/hotels',
+                            element: <HotelListing />,
+                            // element:<div>hotels list</div>
+                        },
+                        {
+                            path:'/savedhotels',
+                            element: <SavedHotels/>
+                        }
+                        // Add more private routes here
+                    ],
+                },
+                {
+                    path: '*',
+                    element: <ErrorPage />,
+                },
+            ]
+        }
+    ]);
+};

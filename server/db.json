@@ -90,7 +90,7 @@
       "id": "1",
       "firstName": "Dipak",
       "lastName": "Karmur",
-      "email": "meet@gmail.com",
+      "email": "dipakkarmur45@gmail.com",
       "password": "Ahir123@",
       "savedHotels": []
     },
@@ -205,6 +205,1252 @@
       "email": "jay@gmail.com",
       "password": "Jay@123",
       "savedHotels": []
+    }
+  ],
+  "hotels": [
+    {
+      "Id": 1,
+      "title": "Sunset Paradise Resort",
+      "Location": "Tropical Island",
+      "City": "Goa",
+      "distance": "Beachfront",
+      "Description": "Escape to paradise at our luxurious beachfront resort. Enjoy stunning ocean views, gourmet dining, and relaxing spa treatments.",
+      "Category": "5-star",
+      "Price": 500,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "101",
+          "Type": "Deluxe Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 500
+        },
+        {
+          "RoomNumber": "102",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 300
+        }
+      ],
+      "bookedRooms": [
+        {
+          "RoomNumber": "103",
+          "Type": "Deluxe Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 500
+        }
+      ],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/beach.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/spa.jpg"
+      ],
+      "id": "422a"
+    },
+    {
+      "Id": 2,
+      "title": "Mountain View Lodge",
+      "Location": "Alpine Retreat",
+      "City": "Shimla",
+      "distance": "Mountain slopes",
+      "Description": "Experience tranquility in our cozy lodge nestled amidst snow-capped peaks. Warm up by the fireplace and savor hearty meals.",
+      "Category": "4-star",
+      "Price": 350,
+      "discountPercentage": 15,
+      "availableRooms": [
+        {
+          "RoomNumber": "201",
+          "Type": "Mountain Suite",
+          "Capacity": 3,
+          "Amenities": [
+            "Panoramic view",
+            "Fireplace",
+            "Two bedrooms (one king bed, one twin bed)"
+          ],
+          "Price": 350
+        },
+        {
+          "RoomNumber": "202",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Forest view",
+            "Double bed"
+          ],
+          "Price": 250
+        }
+      ],
+      "bookedRooms": [
+        {
+          "RoomNumber": "203",
+          "Type": "Mountain Suite",
+          "Capacity": 3,
+          "Amenities": [
+            "Panoramic view",
+            "Fireplace",
+            "Two bedrooms (one king bed, one twin bed)"
+          ],
+          "Price": 350
+        }
+      ],
+      "Rating": 4.5,
+      "Thumbnail": "https://example.com/images/lodge-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/mountain-view.jpg",
+        "https://example.com/images/fireplace.jpg",
+        "https://example.com/images/dining.jpg"
+      ],
+      "id": "f893"
+    },
+    {
+      "Id": 3,
+      "title": "Urban Oasis Hotel",
+      "Location": "City Center",
+      "City": "Mumbai",
+      "distance": "Downtown",
+      "Description": "Discover sophistication in the heart of the city. Our modern hotel offers chic rooms, rooftop bar, and easy access to attractions.",
+      "Category": "4-star",
+      "Price": 200,
+      "discountPercentage": 20,
+      "availableRooms": [
+        {
+          "RoomNumber": "301",
+          "Type": "City View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Skyline view",
+            "Mini-bar",
+            "Queen bed"
+          ],
+          "Price": 200
+        },
+        {
+          "RoomNumber": "302",
+          "Type": "Standard Room",
+          "Capacity": 1,
+          "Amenities": [
+            "City view",
+            "Single bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "bookedRooms": [
+        {
+          "RoomNumber": "303",
+          "Type": "City View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Skyline view",
+            "Mini-bar",
+            "Queen bed"
+          ],
+          "Price": 200
+        }
+      ],
+      "Rating": 4.2,
+      "Thumbnail": "https://example.com/images/hotel-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/cityscape.jpg",
+        "https://example.com/images/rooftop-bar.jpg",
+        "https://example.com/images/lobby.jpg"
+      ],
+      "id": "55c9"
+    },
+    {
+      "Id": 4,
+      "title": "Seaside Retreat Inn",
+      "Location": "Coastal Village",
+      "City": "Kochi",
+      "distance": "Coastal",
+      "Description": "Experience serenity at our charming seaside inn. Relax by the shore, indulge in fresh seafood, and immerse yourself in coastal living.",
+      "Category": "3-star",
+      "Price": 150,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "401",
+          "Type": "Ocean View Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private balcony",
+            "Queen bed"
+          ],
+          "Price": 150
+        },
+        {
+          "RoomNumber": "402",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 100
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4,
+      "Thumbnail": "https://example.com/images/inn-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/seaside-view.jpg",
+        "https://example.com/images/dining.jpg",
+        "https://example.com/images/room-interior.jpg"
+      ],
+      "id": "1516"
+    },
+    {
+      "Id": 5,
+      "title": "Royal Heritage Palace",
+      "Location": "Historic District",
+      "City": "Jaipur",
+      "distance": "City Center",
+      "Description": "Step back in time at our majestic palace. Experience royal grandeur, luxurious accommodations, and traditional Rajasthani hospitality.",
+      "Category": "5-star",
+      "Price": 800,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "501",
+          "Type": "Royal Suite",
+          "Capacity": 4,
+          "Amenities": [
+            "Palace view",
+            "Grand living room",
+            "King bedroom",
+            "Twin bedroom"
+          ],
+          "Price": 800
+        },
+        {
+          "RoomNumber": "502",
+          "Type": "Luxury Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "King bed"
+          ],
+          "price": 500
+        },
+        {
+          "RoomNumber": "502",
+          "Type": "Luxury Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "King bed"
+          ],
+          "Price": 500
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.9,
+      "Thumbnail": "https://example.com/images/palace-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/palace-exterior.jpg",
+        "https://example.com/images/palace-interior.jpg",
+        "https://example.com/images/garden-view.jpg"
+      ],
+      "id": "af1b"
+    },
+    {
+      "Id": 6,
+      "title": "Serenity Resort & Spa",
+      "Location": "Lakefront",
+      "City": "Udaipur",
+      "distance": "Lake Shore",
+      "Description": "Indulge in serenity at our lakeside resort. Unwind with luxurious spa treatments, enjoy breathtaking views, and experience unparalleled tranquility.",
+      "Category": "5-star",
+      "Price": 600,
+      "discountPercentage": 15,
+      "availableRooms": [
+        {
+          "RoomNumber": "601",
+          "Type": "Lake View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Lake view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 600
+        },
+        {
+          "RoomNumber": "602",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 400
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.7,
+      "Thumbnail": "https://example.com/images/resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lake.jpg",
+        "https://example.com/images/spa.jpg",
+        "https://example.com/images/room.jpg"
+      ],
+      "id": "2588"
+    },
+    {
+      "Id": 7,
+      "title": "Himalayan Retreat",
+      "Location": "Hilltop",
+      "City": "Manali",
+      "distance": "Mountain View",
+      "Description": "Escape to the tranquil Himalayas at our mountain retreat. Explore pristine landscapes, enjoy adventurous activities, and rejuvenate in nature's embrace.",
+      "Category": "4-star",
+      "Price": 450,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "701",
+          "Type": "Mountain View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Panoramic view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 450
+        },
+        {
+          "RoomNumber": "702",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Forest view",
+            "Double bed"
+          ],
+          "Price": 300
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.6,
+      "Thumbnail": "https://example.com/images/mountain-retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/mountain-view.jpg",
+        "https://example.com/images/hiking.jpg",
+        "https://example.com/images/chalet.jpg"
+      ],
+      "id": "02cf"
+    },
+    {
+      "Id": 8,
+      "title": "Golden Sands Beach Resort",
+      "Location": "Seaside",
+      "City": "Puri",
+      "distance": "Beachfront",
+      "Description": "Experience luxury at our beachfront resort. Bask in the golden sands, indulge in water sports, and unwind with exquisite dining and entertainment.",
+      "Category": "5-star",
+      "Price": 700,
+      "discountPercentage": 20,
+      "availableRooms": [
+        {
+          "RoomNumber": "801",
+          "Type": "Ocean View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private beach access",
+            "King bed"
+          ],
+          "Price": 700
+        },
+        {
+          "RoomNumber": "802",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 500
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/beach-resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/beach.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/dining.jpg"
+      ],
+      "id": "b13d"
+    },
+    {
+      "Id": 9,
+      "title": "Cityscape Hotel",
+      "Location": "Downtown",
+      "City": "Bangalore",
+      "distance": "City Center",
+      "Description": "Experience modern elegance at our downtown hotel. Discover vibrant city life, unwind in stylish accommodations, and enjoy fine dining.",
+      "Category": "4-star",
+      "Price": 300,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "901",
+          "Type": "City View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Mini-bar",
+            "King bed"
+          ],
+          "Price": 300
+        },
+        {
+          "RoomNumber": "902",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 200
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.5,
+      "Thumbnail": "https://example.com/images/city-hotel-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/cityscape.jpg",
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/room.jpg"
+      ],
+      "id": "2366"
+    },
+    {
+      "Id": 10,
+      "title": "Riverside Retreat",
+      "Location": "Riverbank",
+      "City": "Varanasi",
+      "distance": "Riverside",
+      "Description": "Embrace tranquility at our riverside retreat. Discover spiritual enlightenment, enjoy serene boat rides, and experience the mystical charm of the Ganges.",
+      "Category": "3-star",
+      "Price": 200,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "1001",
+          "Type": "River View Room",
+          "Capacity": 2,
+          "Amenities": [
+            "River view",
+            "Private balcony",
+            "Queen bed"
+          ],
+          "Price": 200
+        },
+        {
+          "RoomNumber": "1002",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.3,
+      "Thumbnail": "https://example.com/images/retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/river.jpg",
+        "https://example.com/images/ganges.jpg",
+        "https://example.com/images/temple.jpg"
+      ],
+      "id": "4d87"
+    },
+    {
+      "Id": 11,
+      "title": "Sunset Paradise Resort",
+      "Location": "Tropical Island",
+      "City": "Goa",
+      "distance": "Beachfront",
+      "Description": "Escape to paradise at our luxurious beachfront resort. Enjoy stunning ocean views, gourmet dining, and relaxing spa treatments. Unwind in our spacious suites with private balconies overlooking the azure waters. Indulge in sumptuous seafood delicacies and cocktails at our beachside restaurant.",
+      "Category": "5-star",
+      "Price": 500,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "101",
+          "Type": "Deluxe Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 500
+        },
+        {
+          "RoomNumber": "102",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 300
+        }
+      ],
+      "bookedRooms": [
+        {
+          "RoomNumber": "103",
+          "Type": "Deluxe Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 500
+        }
+      ],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/beach.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/spa.jpg"
+      ],
+      "id": "63b9"
+    },
+    {
+      "Id": 12,
+      "title": "Mountain View Lodge",
+      "Location": "Alpine Retreat",
+      "City": "Shimla",
+      "distance": "Mountain slopes",
+      "Description": "Experience tranquility in our cozy lodge nestled amidst snow-capped peaks. Warm up by the fireplace and savor hearty meals. Take in panoramic views of the surrounding mountains from your spacious balcony. Embark on hiking adventures through lush forests and explore nearby quaint villages.",
+      "Category": "4-star",
+      "Price": 350,
+      "discountPercentage": 15,
+      "availableRooms": [
+        {
+          "RoomNumber": "201",
+          "Type": "Mountain Suite",
+          "Capacity": 3,
+          "Amenities": [
+            "Panoramic view",
+            "Fireplace",
+            "Two bedrooms (one king bed, one twin bed)"
+          ],
+          "Price": 350
+        },
+        {
+          "RoomNumber": "202",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Forest view",
+            "Double bed"
+          ],
+          "Price": 250
+        }
+      ],
+      "bookedRooms": [
+        {
+          "RoomNumber": "203",
+          "Type": "Mountain Suite",
+          "Capacity": 3,
+          "Amenities": [
+            "Panoramic view",
+            "Fireplace",
+            "Two bedrooms (one king bed, one twin bed)"
+          ],
+          "Price": 350
+        }
+      ],
+      "Rating": 4.5,
+      "Thumbnail": "https://example.com/images/lodge-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/mountain-view.jpg",
+        "https://example.com/images/fireplace.jpg",
+        "https://example.com/images/dining.jpg"
+      ],
+      "id": "68cb"
+    },
+    {
+      "Id": 13,
+      "title": "Urban Oasis Hotel",
+      "Location": "City Center",
+      "City": "Mumbai",
+      "distance": "Downtown",
+      "Description": "Discover sophistication in the heart of the city. Our modern hotel offers chic rooms, rooftop bar, and easy access to attractions. Retreat to your stylishly designed room with panoramic city views. Indulge in culinary delights at our rooftop restaurant while enjoying breathtaking sunset vistas over the skyline.",
+      "Category": "4-star",
+      "Price": 200,
+      "discountPercentage": 20,
+      "availableRooms": [
+        {
+          "RoomNumber": "301",
+          "Type": "City View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Skyline view",
+            "Mini-bar",
+            "Queen bed"
+          ],
+          "Price": 200
+        },
+        {
+          "RoomNumber": "302",
+          "Type": "Standard Room",
+          "Capacity": 1,
+          "Amenities": [
+            "City view",
+            "Single bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "bookedRooms": [
+        {
+          "RoomNumber": "303",
+          "Type": "City View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Skyline view",
+            "Mini-bar",
+            "Queen bed"
+          ],
+          "Price": 200
+        }
+      ],
+      "Rating": 4.2,
+      "Thumbnail": "https://example.com/images/hotel-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/cityscape.jpg",
+        "https://example.com/images/rooftop-bar.jpg",
+        "https://example.com/images/lobby.jpg"
+      ],
+      "id": "891a"
+    },
+    {
+      "Id": 14,
+      "title": "Seaside Retreat Inn",
+      "Location": "Coastal Village",
+      "City": "Kochi",
+      "distance": "Coastal",
+      "Description": "Experience serenity at our charming seaside inn. Relax by the shore, indulge in fresh seafood, and immerse yourself in coastal living. Wake up to the sound of waves and enjoy a leisurely stroll along the pristine beach. Unwind in our cozy rooms with breathtaking ocean views.",
+      "Category": "3-star",
+      "Price": 150,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "401",
+          "Type": "Ocean View Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private balcony",
+            "Queen bed"
+          ],
+          "Price": 150
+        },
+        {
+          "RoomNumber": "402",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 100
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4,
+      "Thumbnail": "https://example.com/images/inn-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/seaside-view.jpg",
+        "https://example.com/images/dining.jpg",
+        "https://example.com/images/room-interior.jpg"
+      ],
+      "id": "8e61"
+    },
+    {
+      "Id": 16,
+      "title": "Serenity Resort & Spa",
+      "Location": "Lakefront",
+      "City": "Udaipur",
+      "distance": "Lake Shore",
+      "Description": "Indulge in serenity at our lakeside resort. Unwind with luxurious spa treatments, enjoy breathtaking views, and experience unparalleled tranquility. Immerse yourself in the natural beauty of Udaipur with boat rides on the tranquil lake. Relax in our elegantly appointed rooms and rejuvenate your senses with our holistic spa therapies.",
+      "Category": "5-star",
+      "Price": 600,
+      "discountPercentage": 15,
+      "availableRooms": [
+        {
+          "RoomNumber": "601",
+          "Type": "Lake View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Lake view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 600
+        },
+        {
+          "RoomNumber": "602",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 400
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.7,
+      "Thumbnail": "https://example.com/images/resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lake.jpg",
+        "https://example.com/images/spa.jpg",
+        "https://example.com/images/room.jpg"
+      ],
+      "id": "223f"
+    },
+    {
+      "Id": 17,
+      "title": "Himalayan Retreat",
+      "Location": "Hilltop",
+      "City": "Manali",
+      "distance": "Mountain View",
+      "Description": "Escape to the tranquil Himalayas at our mountain retreat. Explore pristine landscapes, enjoy adventurous activities, and rejuvenate in nature's embrace. Embark on thrilling trekking expeditions through scenic trails and discover hidden waterfalls. Unwind in our cozy rooms with panoramic views of snow-capped peaks and lush valleys.",
+      "Category": "4-star",
+      "Price": 450,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "701",
+          "Type": "Mountain View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Panoramic view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 450
+        },
+        {
+          "RoomNumber": "702",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Forest view",
+            "Double bed"
+          ],
+          "Price": 300
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.6,
+      "Thumbnail": "https://example.com/images/mountain-retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/mountain-view.jpg",
+        "https://example.com/images/hiking.jpg",
+        "https://example.com/images/chalet.jpg"
+      ],
+      "id": "c8c5"
+    },
+    {
+      "Id": 18,
+      "title": "Golden Sands Beach Resort",
+      "Location": "Seaside",
+      "City": "Puri",
+      "distance": "Beachfront",
+      "Description": "Experience luxury at our beachfront resort. Bask in the golden sands, indulge in water sports, and unwind with exquisite dining and entertainment. Enjoy thrilling water adventures like jet skiing and parasailing or simply relax by the poolside with a refreshing cocktail. Delight your taste buds with a wide array of international cuisine at our beachfront restaurant.",
+      "Category": "5-star",
+      "Price": 700,
+      "discountPercentage": 20,
+      "availableRooms": [
+        {
+          "RoomNumber": "801",
+          "Type": "Ocean View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Ocean view",
+            "Private beach access",
+            "King bed"
+          ],
+          "Price": 700
+        },
+        {
+          "RoomNumber": "802",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 500
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/beach-resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/beach.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/dining.jpg"
+      ],
+      "id": "8e5b"
+    },
+    {
+      "Id": 19,
+      "title": "Cityscape Hotel",
+      "Location": "Downtown",
+      "City": "Bangalore",
+      "distance": "City Center",
+      "Description": "Experience modern elegance at our downtown hotel. Discover vibrant city life, unwind in stylish accommodations, and enjoy fine dining. Treat yourself to a shopping spree at nearby luxury boutiques or explore the city's bustling nightlife. Retreat to our spacious rooms featuring contemporary design and state-of-the-art amenities.",
+      "Category": "4-star",
+      "Price": 300,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "901",
+          "Type": "City View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Mini-bar"
+          ],
+          "Price": 500
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/beach-resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/beach.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/dining.jpg"
+      ],
+      "id": "9183"
+    },
+    {
+      "Id": 20,
+      "title": "Riverside Retreat",
+      "Location": "Riverbank",
+      "City": "Varanasi",
+      "distance": "Riverside",
+      "Description": "Embrace tranquility at our riverside retreat. Discover spiritual enlightenment, enjoy serene boat rides, and experience the mystical charm of the Ganges. Take a peaceful stroll along the riverbanks and witness the mesmerizing Ganga Aarti ceremony. Retreat to our comfortable rooms adorned with traditional decor and modern comforts.",
+      "Category": "3-star",
+      "Price": 200,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "1001",
+          "Type": "River View Room",
+          "Capacity": 2,
+          "Amenities": [
+            "River view",
+            "Private balcony",
+            "Queen bed"
+          ],
+          "Price": 200
+        },
+        {
+          "RoomNumber": "1002",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.3,
+      "Thumbnail": "https://example.com/images/retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/river.jpg",
+        "https://example.com/images/ganges.jpg",
+        "https://example.com/images/temple.jpg"
+      ],
+      "id": "0e0b"
+    },
+    {
+      "Id": 21,
+      "title": "Tranquil Lakeside Resort",
+      "Location": "Lakefront",
+      "City": "Nainital",
+      "distance": "Lake Shore",
+      "Description": "Find tranquility at our lakeside resort in the heart of Nainital. Indulge in serene boat rides on the emerald waters of Naini Lake. Unwind amidst lush greenery and breathtaking mountain views. Explore nearby attractions like Naina Devi Temple and Mall Road. Retreat to our cozy rooms with modern amenities and scenic views.",
+      "Category": "4-star",
+      "Price": 400,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "1101",
+          "Type": "Lake View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Lake view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 400
+        },
+        {
+          "RoomNumber": "1102",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 300
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.6,
+      "Thumbnail": "https://example.com/images/lakeside-resort-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lake.jpg",
+        "https://example.com/images/garden.jpg",
+        "https://example.com/images/room.jpg"
+      ],
+      "id": "8b63"
+    },
+    {
+      "Id": 22,
+      "title": "Majestic Mountain Retreat",
+      "Location": "Hilltop",
+      "City": "Darjeeling",
+      "distance": "Mountain View",
+      "Description": "Escape to our majestic mountain retreat nestled in the serene hills of Darjeeling. Breathe in the crisp mountain air and enjoy panoramic views of the Himalayas. Explore the town's rich cultural heritage and visit attractions like the Himalayan Mountaineering Institute and Tiger Hill. Relax in our cozy rooms after a day of adventure and exploration.",
+      "Category": "3-star",
+      "Price": 250,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "1201",
+          "Type": "Mountain View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Panoramic view",
+            "Private balcony",
+            "Queen bed"
+          ],
+          "Price": 250
+        },
+        {
+          "RoomNumber": "1202",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Mountain view",
+            "Double bed"
+          ],
+          "Price": 200
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.2,
+      "Thumbnail": "https://example.com/images/mountain-retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/mountain-view.jpg",
+        "https://example.com/images/terrace.jpg",
+        "https://example.com/images/room-interior.jpg"
+      ],
+      "id": "b572"
+    },
+    {
+      "Id": 23,
+      "title": "Cozy Beachfront Bungalows",
+      "Location": "Beachfront",
+      "City": "Pondicherry",
+      "distance": "Beachfront",
+      "Description": "Experience the charm of Pondicherry at our cozy beachfront bungalows. Relax on the sandy shores of Promenade Beach and soak up the sun. Explore the French Quarter with its colonial architecture and vibrant streets. Indulge in delicious French and local cuisine. Retreat to our comfortable bungalows and fall asleep to the sound of waves.",
+      "Category": "3-star",
+      "Price": 300,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "1301",
+          "Type": "Beachfront Bungalow",
+          "Capacity": 2,
+          "Amenities": [
+            "Beach view",
+            "Private terrace",
+            "Queen bed"
+          ],
+          "Price": 300
+        },
+        {
+          "RoomNumber": "1302",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 200
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.4,
+      "Thumbnail": "https://example.com/images/beach-bungalows-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/beach.jpg",
+        "https://example.com/images/bungalow.jpg",
+        "https://example.com/images/sunset.jpg"
+      ],
+      "id": "41c0"
+    },
+    {
+      "Id": 25,
+      "title": "Tranquil Forest Retreat",
+      "Location": "Forest Reserve",
+      "City": "Coorg",
+      "distance": "Forest",
+      "Description": "Find peace and tranquility at our forest retreat in Coorg. Immerse yourself in the lush greenery of the Western Ghats and listen to the melodies of nature. Explore the nearby coffee plantations and spice gardens. Unwind in our eco-friendly cottages and reconnect with the essence of nature.",
+      "Category": "3-star",
+      "Price": 250,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "1401",
+          "Type": "Forest View Cottage",
+          "Capacity": 2,
+          "Amenities": [
+            "Forest view",
+            "Private patio",
+            "Queen bed"
+          ],
+          "Price": 250
+        },
+        {
+          "RoomNumber": "1402",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.2,
+      "Thumbnail": "https://example.com/images/forest-retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/forest.jpg",
+        "https://example.com/images/cottage.jpg",
+        "https://example.com/images/trail.jpg"
+      ],
+      "id": "8421"
+    },
+    {
+      "Id": 26,
+      "title": "Serene Hillside Cottage",
+      "Location": "Hillside",
+      "City": "Munnar",
+      "distance": "Mountain View",
+      "Description": "Escape to our serene hillside cottage in Munnar and experience the beauty of the Western Ghats. Wake up to panoramic views of mist-covered mountains and lush tea gardens. Explore the picturesque hill stations and waterfalls nearby. Relax in our cozy cottage and savor the tranquility of nature.",
+      "Category": "4-star",
+      "Price": 350,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "1501",
+          "Type": "Mountain View Cottage",
+          "Capacity": 2,
+          "Amenities": [
+            "Mountain view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 350
+        },
+        {
+          "RoomNumber": "1502",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 250
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.7,
+      "Thumbnail": "https://example.com/images/hillside-cottage-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/hillside.jpg",
+        "https://example.com/images/tea-garden.jpg",
+        "https://example.com/images/cottage-interior.jpg"
+      ],
+      "id": "d28d"
+    },
+    {
+      "Id": 27,
+      "title": "Rustic Farmhouse Retreat",
+      "Location": "Countryside",
+      "City": "Ooty",
+      "distance": "Rural",
+      "Description": "Experience the charm of rural life at our rustic farmhouse retreat in Ooty. Immerse yourself in the tranquil countryside surrounded by lush greenery and rolling hills. Explore the nearby tea estates and botanical gardens. Relax in our cozy farmhouse and enjoy farm-to-table meals made with fresh local produce.",
+      "Category": "3-star",
+      "Price": 200,
+      "discountPercentage": 5,
+      "availableRooms": [
+        {
+          "RoomNumber": "1601",
+          "Type": "Farmhouse Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Countryside view",
+            "Private veranda",
+            "Queen bed"
+          ],
+          "Price": 200
+        },
+        {
+          "RoomNumber": "1602",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.3,
+      "Thumbnail": "https://example.com/images/farmhouse-retreat-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/farmhouse.jpg",
+        "https://example.com/images/countryside.jpg",
+        "https://example.com/images/veranda.jpg"
+      ],
+      "id": "95ee"
+    },
+    {
+      "Id": 28,
+      "title": "Heritage Palace Hotel",
+      "Location": "Historic District",
+      "City": "Mysore",
+      "distance": "City Center",
+      "Description": "Step into a world of regal splendor at our heritage palace hotel in Mysore. Marvel at the magnificent architecture and opulent interiors reminiscent of a bygone era. Explore the rich cultural heritage of Mysore with visits to the Mysore Palace and Chamundi Hill. Indulge in royal hospitality and experience the grandeur of a princely lifestyle.",
+      "Category": "5-star",
+      "Price": 500,
+      "discountPercentage": 15,
+      "availableRooms": [
+        {
+          "RoomNumber": "1701",
+          "Type": "Palace Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Palace view",
+            "Luxury furnishings",
+            "King bed"
+          ],
+          "Price": 500
+        },
+        {
+          "RoomNumber": "1702",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 400
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/palace-hotel-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/palace.jpg",
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/suite.jpg"
+      ],
+      "id": "bc5f"
+    },
+    {
+      "Id": 29,
+      "title": "Safari Wilderness Camp",
+      "Location": "Wildlife Reserve",
+      "City": "Bandipur",
+      "distance": "Wilderness",
+      "Description": "Embark on an unforgettable safari adventure at our wilderness camp in Bandipur. Explore the untamed beauty of the jungle and encounter diverse wildlife including elephants, tigers, and leopards. Settle into our cozy tents amidst nature and experience the thrill of a nocturnal safari under the stars.",
+      "Category": "4-star",
+      "Price": 400,
+      "discountPercentage": 10,
+      "availableRooms": [
+        {
+          "RoomNumber": "1801",
+          "Type": "Safari Tent",
+          "Capacity": 2,
+          "Amenities": [
+            "Wilderness view",
+            "Private deck",
+            "Queen bed"
+          ],
+          "Price": 400
+        },
+        {
+          "RoomNumber": "1802",
+          "Type": "Standard Tent",
+          "Capacity": 2,
+          "Amenities": [
+            "Palace view",
+            "Luxury furnishings",
+            "King bed"
+          ],
+          "Price": 500
+        },
+        {
+          "RoomNumber": "1702",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 400
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/palace-hotel-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/palace.jpg",
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/suite.jpg"
+      ],
+      "id": "2ec0"
     }
   ]
 }
