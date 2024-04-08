@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setSearchData } from "../../../Redux/Actions/SearchAction";
+import { getCategories } from "../../../utils/Axios/RequestBuilder";
+import CarouselComponent from "../../Common/CarouselComponent";
 
 const HeroSection = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    async function fetchCategory() {
+      try {
+        const { success, data, error } = await getCategories();
+        setCategories(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    }
+    fetchCategory();
+  }, []);
+
   const handleClick = (destination) => {
     dispatch(setSearchData(destination));
     navigate("/hotels");
   };
+
   return (
     <>
       <div className="container w-full text-2xl mx-auto  mt-40 mb-10 py-4 ">
@@ -21,7 +38,7 @@ const HeroSection = () => {
           <div className="flex md:flex-col flex-wrap  ">
             <div className="flex flex-1 md:gap-4 justify-center gap-2 ">
               <div
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 basis-1/2 cursor-pointer"
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 md:px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 basis-1/2 cursor-pointer"
                 onClick={() => handleClick("goa")}
               >
                 <img
@@ -30,12 +47,12 @@ const HeroSection = () => {
                   class="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                <h3 className="z-10 mt-2 text-2xl font-bold text-white  ">
+                <h3 className="z-10 mt-2 text-base lg:text-2xl font-bold text-white  ">
                   Goa
                 </h3>
               </div>
               <div
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 basis-1/2 cursor-pointer "
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 md:px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 basis-1/2 cursor-pointer "
                 onClick={() => handleClick("mumbai")}
               >
                 <img
@@ -44,7 +61,7 @@ const HeroSection = () => {
                   class="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                <h3 className="z-10 mt-2 text-2xl font-bold text-white  ">
+                <h3 className="z-10 mt-2 text-base lg:text-2xl font-bold text-white  ">
                   Mumbai
                 </h3>
               </div>
@@ -52,7 +69,7 @@ const HeroSection = () => {
 
             <div className="md:flex flex-1 gap-4 justify-center grid grid-cols-2 ">
               <div
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 cursor-pointer "
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 md:px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 cursor-pointer "
                 onClick={() => handleClick("jaipur")}
               >
                 <img
@@ -61,12 +78,12 @@ const HeroSection = () => {
                   class="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                <h3 className="z-10 mt-2 text-2xl font-bold text-white  ">
+                <h3 className="z-10 mt-2 text-base lg:text-2xl font-bold text-white  ">
                   Jaipur
                 </h3>
               </div>
               <div
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 cursor-pointer "
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 md:px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 cursor-pointer "
                 onClick={() => handleClick("shimla")}
               >
                 <img
@@ -75,12 +92,12 @@ const HeroSection = () => {
                   class="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                <h3 className="z-10 mt-2 text-2xl font-bold text-white  ">
+                <h3 className="z-10 mt-2 text-base lg:text-2xl font-bold text-white  ">
                   Shimla
                 </h3>
               </div>
               <div
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 cursor-pointer "
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 md:px-8 pb-8 pt-40  mx-auto mt-4 h-8 w-[30vw] md:w-[20vw] md:h-20 cursor-pointer "
                 onClick={() => handleClick("bangalore")}
               >
                 <img
@@ -89,10 +106,42 @@ const HeroSection = () => {
                   class="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                <h3 className="z-10 mt-2 text-2xl font-bold text-white  ">
+                <h3 className="z-10 mt-2 text-base lg:text-2xl font-bold text-white  ">
                   Bangalore
                 </h3>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[60vw] mx-auto mt-8">
+          <div className="text-2xl font-semibold ">Browse by property type</div>
+          <p className="text-base "></p>
+          <div className="flex md:flex-col flex-wrap  ">
+            <div className="flex flex-1 md:gap-4 justify-center gap-2 ">
+            <CarouselComponent>
+              {categories.map((category) => {
+
+                return (
+                 
+                     <div
+                    className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 pb-8 pt-40  mx-auto mt-4 h-4 w-[25vw] md:w-[15vw] lg:w-[10vw] md:h-20 basis-1/2 cursor-pointer"
+                    onClick={() => handleClick(`${category.name}`)}
+                  >
+                    <img
+                      src={category.image}
+                      alt={category.name}
+                      class="absolute inset-0 h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <h3 className="z-10 mt-2 text-base lg:text-xl font-bold text-white  ">
+                      {category.name}
+                    </h3>
+                  </div>
+                 
+                 
+                );
+              })}
+               </CarouselComponent>
             </div>
           </div>
         </div>

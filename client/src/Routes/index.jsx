@@ -70,6 +70,9 @@ const UsersPrivateRoute = React.lazy(() => import('../private-public-route/Users
 const HotelListing = React.lazy(() => import('../Components/pages/HotelListing'));
 import { useSelector } from 'react-redux';
 import SavedHotels from '../Components/pages/SavedHotels';
+import HotelViewDetails from '../Components/pages/HotelViewDetails';
+import UserDetails from '../Components/pages/UserDetails';
+import UserBookings from '../Components/pages/UserBookings';
 
 export const Router = () => {
     const role = useSelector((state)=> state.role);
@@ -103,6 +106,18 @@ export const Router = () => {
                         {
                             path:'/savedhotels',
                             element: <SavedHotels/>
+                        },
+                        {
+                            path:'/hotels/:hotelId',
+                            element: <HotelViewDetails/>
+                        },
+                        {
+                            path:'/userdetails',
+                            element: <UserDetails/>
+                        },
+                        {
+                            path:'/userbookings',
+                            element:<UserBookings/>
                         }
                         // Add more private routes here
                     ],

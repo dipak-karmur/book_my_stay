@@ -1,22 +1,40 @@
 import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { FaHeart } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import { setRole } from "../../Redux/Actions/roleActions";
 import API from "../../utils/Axios/api";
-import { useNavigate } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { format } from "date-fns";
 
 const HotelCard = ({ hotel }) => {
   const user = useSelector((state) => state.role.user);
+  const searchData = useSelector((state) => state.searchData);
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  function likedHeart(){
-    const isLiked = user.savedHotels.some((item)=> hotel.id === item.id )
+  function likedHeart() {
+    const isLiked = user.savedHotels.some((item) => hotel.id === item.id);
     return isLiked;
   }
-  
+
+  const tripStartDate = searchData.date?.[0]?.startDate
+    ? new Date(searchData.date[0].startDate)
+    : new Date();
+  const tripEndDate = searchData.date?.[0]?.endDate
+    ? new Date(searchData.date[0].endDate)
+    : new Date();
+
+  const differenceMs = tripEndDate.getTime() - tripStartDate.getTime();
+  const differenceDays = differenceMs / (1000 * 60 * 60 * 24);
+  const nights = Math.floor(differenceDays);
+  const adults = searchData.options?.adult || 1;
+  const total = nights * adults * hotel.Price;
+  const taxes = (total * 12) / 100;
+
   async function addToSavedHotel(hotel) {
     const savedHotelsList = user.savedHotels;
     if (user) {
@@ -29,11 +47,10 @@ const HotelCard = ({ hotel }) => {
         try {
           await API.patch(`/users/${user.id}`, user);
           dispatch(setRole("user", user));
-          toast.success('Added to Saved Hotels!')
+          toast.success("Added to Saved Hotels!");
         } catch (error) {
           console.log(error);
         }
-       
       } else {
         const updatedHotels = user.savedHotels.filter(
           (item) => item.id != hotel.id
@@ -42,7 +59,6 @@ const HotelCard = ({ hotel }) => {
         await API.patch(`/users/${user.id}`, updatedUser);
         dispatch(setRole("user", updatedUser));
         toast.success("Removed from Saved Hotels!");
-        
       }
     } else {
       toast.warn("Please Login First");
@@ -50,6 +66,9 @@ const HotelCard = ({ hotel }) => {
     }
   }
 
+  function handleNavigate() {
+    navigate(`/hotels/${hotel.id}`);
+  }
   return (
     <div>
       <div className="">
@@ -84,29 +103,52 @@ const HotelCard = ({ hotel }) => {
               <button
                 className="cursor-pointer border-[1px] border-slate-300 m-2 bg-slate-100 rounded-full p-2 "
                 onClick={() => addToSavedHotel(hotel)}
-                
               >
-              <FaHeart size={20} className={`cursor-pointer border-gray-900 ${likedHeart() ? `text-red-600`: `text-neutral-400`}`}/>
+                <FaHeart
+                  size={20}
+                  className={`cursor-pointer border-gray-900 ${
+                    likedHeart() ? `text-red-600` : `text-neutral-400`
+                  }`}
+                />
               </button>
               <div className="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
                 {hotel.Category}
               </div>
             </div>
-            <h3 className="font-black text-gray-800 md:text-3xl text-xl">
-              {hotel.title}
-            </h3>
+
+            <Link to={`/hotels/${hotel.id}`}>
+              <h3 className="font-black text-gray-800 md:text-3xl text-xl hover:text-[#0071c2]">
+                {hotel.title}
+              </h3>
+            </Link>
             <h1 className="font-black text-gray-700 md:text-xl text-md">
               {hotel.City}
             </h1>
-            <p className="md:text-lg text-gray-500 text-base">
+            <p className="md:text-lg text-gray-500 text-base  ">
               {hotel.Description}
             </p>
-            <p className="text-xl font-black text-gray-800">
-              ${hotel.Price}
-              <span className="font-normal text-gray-600 text-base">
-                /night
-              </span>
-            </p>
+            <div className="flex justify-between">
+              <p className="text-xl font-black text-gray-800 mt-4">
+                ${hotel.Price}
+                <span className="font-normal text-gray-600 text-base">
+                  /night
+                </span>
+              </p>
+              <div className="flex flex-col justify-center items-end">
+                <p className="text-sm">
+                  {" "}
+                  {nights} nights, {adults} adults{" "}
+                </p>
+                <p className="text-xl font-semibold "> ${total} </p>
+                <p className="text-sm">+ ${taxes} taxes and charges</p>
+                <button
+                  className="mt-2 px-2 py-1.5 md:px-3 md:py-2 rounded-md bg-[#0071c2] text-white  hover:bg-sky-800 flex items-center gap-0.5"
+                  onClick={handleNavigate}
+                >
+                  See avalaibility <IoIosArrowForward size={18} />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

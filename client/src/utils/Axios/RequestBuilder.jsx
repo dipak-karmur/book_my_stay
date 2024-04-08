@@ -75,5 +75,78 @@ export const getUsers = async () => {
     }
   }
   
+  export const addBooking = async (booking) => {
+    try {
+      const response = await API.post("/bookings", booking);
+     
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: null,
+        error: error.message,
+      };
+    }
+  }
 
+  export const updateHotel = async (hotelData) => {
+    try {
+      const response = await API.patch(`/hotels/${hotelData.id}`, hotelData);
+     
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: null,
+        error: error.message,
+      };
+    }
+  }
+
+
+  export const getCategories = async () => {
+    try {
+      const response = await API.get("/categories");
+      
+      
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: [],
+        error: error.message,
+      };
+    }
+  };
+  
+  export const getBookings = async () => {
+    try {
+      const response = await API.get("/bookings");
+      
+      
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: [],
+        error: error.message,
+      };
+    }
+  };
   
