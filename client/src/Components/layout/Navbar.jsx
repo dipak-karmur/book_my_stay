@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 function Navbar() {
   const [burgerButton, setBurgerButton] = useState(false);
-  //const user = useSelector((state) => state.role.user.firstName);
+  const user = useSelector((state) => state.role.user.firstName);
 
   return (
     <>
@@ -87,12 +87,14 @@ function Navbar() {
               </NavLink>
              
             </ul>
-            {/* {user && !burgerButton? (
+            {user && !burgerButton? (
                 <button className="flex gap-1 justify-center items-center text-white bg-blue hover:bg-blue-400 rounded-full px-2 py-2 absolute right-2 top-6 ">
                   <CgProfile size={20} />
                   {user}
                 </button>
-              ) : null} */}
+              ) : null}
+              
+              
           </div>
         </div>
       </nav>
