@@ -548,17 +548,6 @@
       ],
       "availableRooms": [
         {
-          "RoomNumber": "901",
-          "Type": "City View Suite",
-          "Capacity": 2,
-          "Amenities": [
-            "City view",
-            "Mini-bar",
-            "King bed"
-          ],
-          "Price": 300
-        },
-        {
           "RoomNumber": "902",
           "Type": "Standard Room",
           "Capacity": 2,
@@ -1187,17 +1176,6 @@
       ],
       "availableRooms": [
         {
-          "RoomNumber": "1401",
-          "Type": "Forest View Cottage",
-          "Capacity": 2,
-          "Amenities": [
-            "Forest view",
-            "Private patio",
-            "Queen bed"
-          ],
-          "Price": 250
-        },
-        {
           "RoomNumber": "1402",
           "Type": "Standard Room",
           "Capacity": 2,
@@ -1415,6 +1393,26 @@
         "https://example.com/images/lobby.jpg",
         "https://example.com/images/suite.jpg"
       ]
+    },
+    {
+      "id": "30",
+      "title": "hotel elegance",
+      "Location": "thaltej",
+      "City": "ahmedabad",
+      "distance": "3 km from sg road",
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "apartments",
+      "Price": "400",
+      "discountPercentage": "24",
+      "Amenities": [
+        "garden view",
+        " private balcony",
+        " king bed"
+      ],
+      "availableRooms": [],
+      "Rating": "4.3",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": []
     }
   ],
   "bookings": [
@@ -2494,6 +2492,44 @@
       "allocatedRooms": [
         "302"
       ]
+    },
+    {
+      "id": "0e85",
+      "hotelId": "9",
+      "userId": "1",
+      "bookingId": 1,
+      "checkInDate": "2024-04-08T04:29:29.490Z",
+      "checkOutDate": "2024-04-08T04:29:29.490Z",
+      "noOfRoom": 1,
+      "guests": 1,
+      "allocatedRooms": [
+        "901"
+      ]
+    },
+    {
+      "id": "4afb",
+      "hotelId": "25",
+      "userId": "1",
+      "bookingId": 1,
+      "checkInDate": "2024-04-08T04:51:34.453Z",
+      "checkOutDate": "2024-04-08T04:51:34.453Z",
+      "noOfRoom": 1,
+      "guests": 1,
+      "allocatedRooms": [
+        "1401"
+      ]
+    }
+  ],
+  "hotelowner": [
+    {},
+    {
+      "id": "d92b",
+      "firstName": "vats",
+      "lastName": "bhatti",
+      "hotelName": "Hotel Paradise",
+      "email": "dfg@gmail.com",
+      "password": "Vats@123",
+      "categoriesToOffer": []
     }
   ]
 }

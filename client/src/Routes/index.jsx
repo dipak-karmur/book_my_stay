@@ -73,6 +73,9 @@ import SavedHotels from '../Components/pages/SavedHotels';
 import HotelViewDetails from '../Components/pages/HotelViewDetails';
 import UserDetails from '../Components/pages/UserDetails';
 import UserBookings from '../Components/pages/UserBookings';
+import HotelOwnerRegister from '../Components/pages/Register/HotelOwnerRegister';
+import OwnerPrivateRoute from '../private-public-route/OwnerPrivateRoute';
+import RegisterProperty from '../Components/pages/Register/RegisterProperty';
 
 export const Router = () => {
     const role = useSelector((state)=> state.role);
@@ -93,6 +96,10 @@ export const Router = () => {
                 {
                     path: '/register',
                     element: <UserRegister/>
+                },
+                {
+                    path: '/hotelownerregister',
+                    element: <HotelOwnerRegister/>
                 },
                 {
                   
@@ -121,6 +128,15 @@ export const Router = () => {
                         }
                         // Add more private routes here
                     ],
+                },
+                {
+                    element: <OwnerPrivateRoute isAuth={role.hotelowner !== null ? true : false} />,
+                    children:[
+                        {
+                            path: '/register-property',
+                            element: <RegisterProperty />,
+                        }
+                    ]
                 },
                 {
                     path: '*',

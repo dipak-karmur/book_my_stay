@@ -150,3 +150,38 @@ export const getUsers = async () => {
     }
   };
   
+  export const addHotelOwner = async (hotelOwner) => {
+    try {
+      const response = await API.post("/hotelowner", hotelOwner);
+     
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: null,
+        error: error.message,
+      };
+    }
+  }
+
+  export const getHotelOwners = async () => {
+    try {
+      const response = await API.get("/hotelowner");
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: [],
+        error: error.message,
+      };
+    }
+  };
+
