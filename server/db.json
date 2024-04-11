@@ -71,6 +71,12 @@
       "name": "home stays",
       "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "image": "https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450066.jpeg"
+    },
+    {
+      "id": "13",
+      "name": "hostels",
+      "description": "A hostel is a form of low-cost, short-term shared sociable lodging where guests can rent a bed, usually a bunk bed in a dormitory sleeping 4–20 people, with shared use of a lounge and usually a kitchen.",
+      "image": "https://plus.unsplash.com/premium_photo-1680098057495-efa1413023f7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
   "role": [
@@ -84,114 +90,15 @@
   ],
   "users": [
     {
-      "id": "1578"
-    },
-    {
-      "id": "1",
-      "firstName": "Dipak",
-      "lastName": "Karmur",
-      "email": "dipakkarmur45@gmail.com",
-      "password": "Ahir123@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "Dipak",
-      "lastName": "Karmur",
-      "email": "meet@gmail.com",
-      "password": "Ahir123@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "Dipak",
-      "lastName": "Karmur",
-      "email": "meet@gmail.com",
-      "password": "Ahir123@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "Dipak",
-      "lastName": "Karmur",
-      "email": "meet@gmail.com",
-      "password": "Ahir123@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "Dip",
-      "lastName": "Karmur",
-      "email": "meet@gmail.com",
-      "password": "Ahir123@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "vats",
-      "lastName": "bhatti",
-      "email": "meet@gmail.com",
-      "password": "Vats@123",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
+      "id": "123",
       "firstName": "dipak",
-      "lastName": "karmur",
-      "email": "meet@gmail.com",
-      "password": "Ahir123@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "vatsal",
-      "lastName": "bhatti",
-      "email": "aisha@gmail.com",
-      "password": "As1@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "ddd",
       "lastName": "dsa",
-      "email": "meet@gmail.com",
-      "password": "As123@",
+      "email": "j@gmail.com",
+      "password": "Dj@123",
       "savedHotels": []
     },
     {
-      "id": "1",
-      "firstName": "ddd",
-      "lastName": "dsa",
-      "email": "meet@gmail.com",
-      "password": "Qw12@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "vats",
-      "lastName": "dsa",
-      "email": "meet@gmail.com",
-      "password": "As12@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "Dipak",
-      "lastName": "dsa",
-      "email": "meet@gmail.com",
-      "password": "Ds12@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
-      "firstName": "Dip",
-      "lastName": "dsa",
-      "email": "aisha@gmail.com",
-      "password": "As12@",
-      "savedHotels": []
-    },
-    {
-      "id": "1",
+      "id": "14",
       "firstName": "Dipak",
       "lastName": "Karmur",
       "email": "dipakkarmur45@gmail.com",
@@ -200,101 +107,53 @@
     },
     {
       "id": "2",
-      "firstName": "jay",
-      "lastName": "prajapati",
+      "firstName": "vaideek",
+      "lastName": "patel",
+      "email": "vaideek@gmail.com",
+      "password": "Vaid@123",
+      "savedHotels": []
+    },
+    {
+      "id": "3",
+      "firstName": "Jay",
+      "lastName": "patel",
       "email": "jay@gmail.com",
       "password": "Jay@123",
+      "savedHotels": []
+    },
+    {
+      "id": "f5db",
+      "firstName": "vatsal",
+      "lastName": "bhatti",
+      "email": "vatsal@gmail.com",
+      "password": "Va@123",
+      "savedHotels": []
+    },
+    {
+      "id": "7395",
+      "firstName": "kishan",
+      "lastName": "patel",
+      "email": "kishan@gmail.com",
+      "password": "Ki@123",
       "savedHotels": []
     }
   ],
   "hotels": [
     {
-      "id": "1",
-      "title": "Sunset Paradise Resort",
-      "Location": "Tropical Island",
-      "City": "Goa",
-      "distance": "Beachfront",
-      "Description": "Escape to paradise at our luxurious beachfront resort. Enjoy stunning ocean views, gourmet dining, and relaxing spa treatments.",
-      "Category": "5-star",
-      "Price": 500,
-      "discountPercentage": 10,
-      "Amenities": [
-        "Ocean view",
-        "Private balcony",
-        "King bed"
-      ],
-      "availableRooms": [],
-      "bookedRooms": [
-        {
-          "RoomNumber": "103",
-          "Type": "Deluxe Suite",
-          "Capacity": 2,
-          "Amenities": [
-            "Ocean view",
-            "Private balcony",
-            "King bed"
-          ],
-          "Price": 500
-        }
-      ],
-      "Rating": 4.8,
-      "Thumbnail": "https://example.com/images/resort-thumbnail.jpg",
-      "Images": [
-        "https://example.com/images/beach.jpg",
-        "https://example.com/images/pool.jpg",
-        "https://example.com/images/spa.jpg"
-      ]
-    },
-    {
-      "id": "2",
-      "title": "Mountain View Lodge",
-      "Location": "Alpine Retreat",
-      "City": "Shimla",
-      "distance": "Mountain slopes",
-      "Description": "Experience tranquility in our cozy lodge nestled amidst snow-capped peaks. Warm up by the fireplace and savor hearty meals.",
-      "Category": "4-star",
-      "Price": 350,
-      "discountPercentage": 15,
-      "Amenities": [
-        "Forest view",
-        "Double bed"
-      ],
-      "availableRooms": [],
-      "bookedRooms": [
-        {
-          "RoomNumber": "203",
-          "Type": "Mountain Suite",
-          "Capacity": 3,
-          "Amenities": [
-            "Panoramic view",
-            "Fireplace",
-            "Two bedrooms (one king bed, one twin bed)"
-          ],
-          "Price": 350
-        }
-      ],
-      "Rating": 4.5,
-      "Thumbnail": "https://example.com/images/lodge-thumbnail.jpg",
-      "Images": [
-        "https://example.com/images/mountain-view.jpg",
-        "https://example.com/images/fireplace.jpg",
-        "https://example.com/images/dining.jpg"
-      ]
-    },
-    {
       "id": "3",
-      "title": "Urban Oasis Hotel",
-      "Location": "City Center",
+      "title": "Urban Oasis elegance Hotel",
+      "Location": "City Center chawk",
       "City": "Mumbai",
       "distance": "Downtown",
-      "Description": "Discover sophistication in the heart of the city. Our modern hotel offers chic rooms, rooftop bar, and easy access to attractions.",
-      "Category": "4-star",
-      "Price": 200,
-      "discountPercentage": 20,
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "villas",
+      "Price": "200",
+      "discountPercentage": "24",
+      "ownedBy": "admin",
       "Amenities": [
-        "Ocean view",
-        "Private balcony",
-        "Queen bed"
+        "garden view",
+        " private balcony",
+        " king bed"
       ],
       "availableRooms": [],
       "bookedRooms": [
@@ -310,86 +169,33 @@
           "Price": 200
         }
       ],
-      "Rating": 4.2,
-      "Thumbnail": "https://example.com/images/hotel-thumbnail.jpg",
-      "Images": [
-        "https://example.com/images/cityscape.jpg",
-        "https://example.com/images/rooftop-bar.jpg",
-        "https://example.com/images/lobby.jpg"
-      ]
-    },
-    {
-      "id": "4",
-      "title": "Seaside Retreat Inn",
-      "Location": "Coastal Village",
-      "City": "Kochi",
-      "distance": "Coastal",
-      "Description": "Experience serenity at our charming seaside inn. Relax by the shore, indulge in fresh seafood, and immerse yourself in coastal living.",
-      "Category": "3-star",
-      "Price": 150,
-      "discountPercentage": 5,
-      "Amenities": [
-        "Ocean view",
-        "Private balcony",
-        "Queen bed"
-      ],
-      "availableRooms": [
-        {
-          "RoomNumber": "401",
-          "Type": "Ocean View Room",
-          "Capacity": 2,
-          "Amenities": [
-            "Ocean view",
-            "Private balcony",
-            "Queen bed"
-          ],
-          "Price": 150
-        },
-        {
-          "RoomNumber": "402",
-          "Type": "Standard Room",
-          "Capacity": 2,
-          "Amenities": [
-            "Garden view",
-            "Double bed"
-          ],
-          "Price": 100
-        }
-      ],
-      "bookedRooms": [],
-      "Rating": 4,
-      "Thumbnail": "https://example.com/images/inn-thumbnail.jpg",
-      "Images": [
-        "https://example.com/images/seaside-view.jpg",
-        "https://example.com/images/dining.jpg",
-        "https://example.com/images/room-interior.jpg"
-      ]
+      "Rating": "4.3",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": []
     },
     {
       "id": "5",
-      "title": "Royal Heritage Palace",
+      "title": "Royal Heritage  rajasthan Palace",
       "Location": "Historic District",
       "City": "Jaipur",
       "distance": "City Center",
-      "Description": "Step back in time at our majestic palace. Experience royal grandeur, luxurious accommodations, and traditional Rajasthani hospitality.",
-      "Category": "5-star",
-      "Price": 800,
-      "discountPercentage": 10,
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "Resorts",
+      "Price": "500",
+      "discountPercentage": "22",
+      "ownedBy": "admin",
       "Amenities": [
-        "Palace view",
-        "Grand living room",
-        "King bedroom",
-        "Twin bedroom"
+        "garden view",
+        " private balcony",
+        " king bed"
       ],
       "availableRooms": [],
       "bookedRooms": [],
-      "Rating": 4.9,
-      "Thumbnail": "https://example.com/images/palace-thumbnail.jpg",
-      "Images": [
-        "https://example.com/images/palace-exterior.jpg",
-        "https://example.com/images/palace-interior.jpg",
-        "https://example.com/images/garden-view.jpg"
-      ]
+      "Rating": "4.9",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": []
     },
     {
       "id": "6",
@@ -401,6 +207,7 @@
       "Category": "5-star",
       "Price": 600,
       "discountPercentage": 15,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Garden view",
         "Queen bed"
@@ -447,6 +254,7 @@
       "Category": "4-star",
       "Price": 450,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "River view",
         "Private balcony",
@@ -494,6 +302,7 @@
       "Category": "5-star",
       "Price": 700,
       "discountPercentage": 20,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "River view",
         "Private balcony",
@@ -541,6 +350,7 @@
       "Category": "4-star",
       "Price": 300,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "River view",
         "Private balcony",
@@ -548,15 +358,36 @@
       ],
       "availableRooms": [
         {
-          "RoomNumber": "902",
-          "Type": "Standard Room",
+          "RoomNumber": "1702",
+          "Type": "Deluxe Room",
           "Capacity": 2,
           "Amenities": [
             "City view",
             "Queen bed"
           ],
-          "Price": 200
-        }
+          "Price": 400
+        },
+        {
+          "RoomNumber": "1703",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 400
+        },
+        {
+          "RoomNumber": "1704",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 400
+        },
+        "1702"
       ],
       "bookedRooms": [],
       "Rating": 4.5,
@@ -577,6 +408,7 @@
       "Category": "3-star",
       "Price": 200,
       "discountPercentage": 5,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "River view",
         "Private balcony",
@@ -603,6 +435,27 @@
             "Double bed"
           ],
           "Price": 150
+        },
+        {
+          "RoomNumber": "1301",
+          "Type": "Beachfront Bungalow",
+          "Capacity": 2,
+          "Amenities": [
+            "Beach view",
+            "Private terrace",
+            "Queen bed"
+          ],
+          "Price": 300
+        },
+        {
+          "RoomNumber": "1302",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 200
         }
       ],
       "bookedRooms": [],
@@ -624,6 +477,7 @@
       "Category": "5-star",
       "Price": 500,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Panoramic view",
         "Fireplace",
@@ -662,6 +516,7 @@
       "Category": "4-star",
       "Price": 350,
       "discountPercentage": 15,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Panoramic view",
         "Fireplace",
@@ -721,6 +576,7 @@
       "Category": "4-star",
       "Price": 200,
       "discountPercentage": 20,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Skyline view",
         "Mini-bar",
@@ -758,6 +614,7 @@
       "Category": "3-star",
       "Price": 150,
       "discountPercentage": 5,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Ocean view",
         "Private balcony",
@@ -805,6 +662,7 @@
       "Category": "5-star",
       "Price": 600,
       "discountPercentage": 15,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Lake view",
         "Private balcony",
@@ -852,6 +710,7 @@
       "Category": "4-star",
       "Price": 450,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Panoramic view",
         "Private balcony",
@@ -899,6 +758,7 @@
       "Category": "5-star",
       "Price": 700,
       "discountPercentage": 20,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Ocean view",
         "Private beach access",
@@ -946,6 +806,7 @@
       "Category": "4-star",
       "Price": 300,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "City view",
         "Mini-bar"
@@ -981,6 +842,7 @@
       "Category": "3-star",
       "Price": 200,
       "discountPercentage": 5,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "River view",
         "Private balcony",
@@ -1028,6 +890,7 @@
       "Category": "4-star",
       "Price": 400,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Lake view",
         "Private balcony",
@@ -1075,6 +938,7 @@
       "Category": "3-star",
       "Price": 250,
       "discountPercentage": 5,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Panoramic view",
         "Private balcony",
@@ -1122,33 +986,14 @@
       "Category": "3-star",
       "Price": 300,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Beach view",
         "Private terrace",
         "Queen bed"
       ],
       "availableRooms": [
-        {
-          "RoomNumber": "1301",
-          "Type": "Beachfront Bungalow",
-          "Capacity": 2,
-          "Amenities": [
-            "Beach view",
-            "Private terrace",
-            "Queen bed"
-          ],
-          "Price": 300
-        },
-        {
-          "RoomNumber": "1302",
-          "Type": "Standard Room",
-          "Capacity": 2,
-          "Amenities": [
-            "Garden view",
-            "Double bed"
-          ],
-          "Price": 200
-        }
+        "1302"
       ],
       "bookedRooms": [],
       "Rating": 4.4,
@@ -1169,23 +1014,13 @@
       "Category": "3-star",
       "Price": 250,
       "discountPercentage": 5,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Forest view",
         "Private patio",
         "Queen bed"
       ],
-      "availableRooms": [
-        {
-          "RoomNumber": "1402",
-          "Type": "Standard Room",
-          "Capacity": 2,
-          "Amenities": [
-            "Garden view",
-            "Double bed"
-          ],
-          "Price": 150
-        }
-      ],
+      "availableRooms": [],
       "bookedRooms": [],
       "Rating": 4.2,
       "Thumbnail": "https://example.com/images/forest-retreat-thumbnail.jpg",
@@ -1205,12 +1040,23 @@
       "Category": "4-star",
       "Price": 350,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Mountain view",
         "Private balcony",
         "King bed"
       ],
       "availableRooms": [
+        {
+          "RoomNumber": "1502",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 250
+        },
         {
           "RoomNumber": "1501",
           "Type": "Mountain View Cottage",
@@ -1221,16 +1067,6 @@
             "King bed"
           ],
           "Price": 350
-        },
-        {
-          "RoomNumber": "1502",
-          "Type": "Standard Room",
-          "Capacity": 2,
-          "Amenities": [
-            "Garden view",
-            "Queen bed"
-          ],
-          "Price": 250
         }
       ],
       "bookedRooms": [],
@@ -1252,6 +1088,7 @@
       "Category": "3-star",
       "Price": 200,
       "discountPercentage": 5,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Countryside view",
         "Private veranda",
@@ -1299,6 +1136,9 @@
       "Category": "5-star",
       "Price": 500,
       "discountPercentage": 15,
+      "ownedBy": "dfg@gmail.com",
+      "noOfReviews": 20,
+      "reviews": [],
       "Amenities": [
         "Palace view",
         "Luxury furnishings",
@@ -1346,23 +1186,13 @@
       "Category": "4-star",
       "Price": 400,
       "discountPercentage": 10,
+      "ownedBy": "dfg@gmail.com",
       "Amenities": [
         "Ocean view",
         "Private balcony",
         "King bed"
       ],
       "availableRooms": [
-        {
-          "RoomNumber": "1801",
-          "Type": "Safari Tent",
-          "Capacity": 2,
-          "Amenities": [
-            "Wilderness view",
-            "Private deck",
-            "Queen bed"
-          ],
-          "Price": 400
-        },
         {
           "RoomNumber": "1802",
           "Type": "Standard Tent",
@@ -1373,16 +1203,6 @@
             "King bed"
           ],
           "Price": 500
-        },
-        {
-          "RoomNumber": "1702",
-          "Type": "Deluxe Room",
-          "Capacity": 2,
-          "Amenities": [
-            "City view",
-            "Queen bed"
-          ],
-          "Price": 400
         }
       ],
       "bookedRooms": [],
@@ -1396,14 +1216,756 @@
     },
     {
       "id": "30",
-      "title": "hotel elegance",
+      "title": "Taj Mahal Palace",
+      "Location": "Mumbai Central",
+      "City": "Mumbai",
+      "distance": "City Center",
+      "Description": "Experience luxury at its finest at the iconic Taj Mahal Palace in Mumbai. Enjoy unparalleled views of the Arabian Sea and impeccable service.",
+      "Category": "5-star",
+      "Price": 800,
+      "discountPercentage": 10,
+      "ownedBy": "tajmahal@gmail.com",
+      "Amenities": [
+        "Sea view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "701",
+          "Type": "Sea View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Sea view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1000
+        },
+        {
+          "RoomNumber": "702",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 600
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/tajmahal-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Gateway Hotel",
+      "Location": "Vadapalani",
+      "City": "Chennai",
+      "distance": "City Center",
+      "Description": "Discover the perfect blend of comfort and convenience at Gateway Hotel Chennai. Enjoy spacious rooms, delicious cuisine, and warm hospitality.",
+      "Category": "4-star",
+      "Price": 600,
+      "discountPercentage": 20,
+      "ownedBy": "gatewaychennai@gmail.com",
+      "Amenities": [
+        "City view",
+        "Swimming pool",
+        "Queen bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "801",
+          "Type": "Executive Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 700
+        },
+        {
+          "RoomNumber": "802",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 500
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.5,
+      "Thumbnail": "https://example.com/images/gateway-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Grand Hyatt",
+      "Location": "Bandra Kurla Complex",
+      "City": "Mumbai",
+      "distance": "City Center",
+      "Description": "Experience luxury redefined at Grand Hyatt Mumbai. From lavish accommodations to world-class dining, indulge in an unforgettable stay.",
+      "Category": "5-star",
+      "Price": 900,
+      "discountPercentage": 15,
+      "ownedBy": "grandhyattmumbai@gmail.com",
+      "Amenities": [
+        "Pool view",
+        "Spa",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "901",
+          "Type": "Grand Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Pool view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1000
+        },
+        {
+          "RoomNumber": "902",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 700
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.7,
+      "Thumbnail": "https://example.com/images/grandhyatt-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Le Meridien",
+      "Location": "Raja Bazar",
+      "City": "Patna",
+      "distance": "City Center",
+      "Description": "Discover the essence of luxury at Le Meridien Patna. Enjoy opulent accommodations, delectable cuisine, and personalized service.",
+      "Category": "5-star",
+      "Price": 700,
+      "discountPercentage": 18,
+      "ownedBy": "lemeridienpatna@gmail.com",
+      "Amenities": [
+        "River view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "1001",
+          "Type": "River View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "River view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 800
+        },
+        {
+          "RoomNumber": "1002",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 600
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.6,
+      "Thumbnail": "https://example.com/images/lemeridien-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "35",
+      "title": "The Oberoi Amarvilas",
+      "Location": "Taj East Gate Road",
+      "City": "Agra",
+      "distance": "City Center",
+      "Description": "Experience the epitome of luxury at The Oberoi Amarvilas, located just 600 meters from the iconic Taj Mahal. Enjoy breathtaking views, impeccable service, and opulent accommodations.",
+      "Category": "5-star",
+      "Price": 1200,
+      "discountPercentage": 10,
+      "ownedBy": "oberoiamarvilas@gmail.com",
+      "Amenities": [
+        "Taj Mahal view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "3501",
+          "Type": "Taj View Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Taj Mahal view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1500
+        },
+        {
+          "RoomNumber": "3502",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 1000
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.9,
+      "Thumbnail": "https://example.com/images/oberoiamarvilas-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "36",
+      "title": "The Leela Palace",
+      "Location": "Kempinski Ambience",
+      "City": "Delhi",
+      "distance": "City Center",
+      "Description": "Indulge in luxury and grandeur at The Leela Palace, New Delhi. Experience world-class hospitality, lavish amenities, and exquisite dining.",
+      "Category": "5-star",
+      "Price": 1100,
+      "discountPercentage": 15,
+      "ownedBy": "leelapalace@gmail.com",
+      "Amenities": [
+        "City view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "3601",
+          "Type": "Royal Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1400
+        },
+        {
+          "RoomNumber": "3602",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 900
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/leelapalace-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "37",
+      "title": "Taj Lake Palace",
+      "Location": "Pichola Lake",
+      "City": "Udaipur",
+      "distance": "Lake Shore",
+      "Description": "Experience unparalleled luxury and romance at Taj Lake Palace, located amidst the serene waters of Lake Pichola. Enjoy regal accommodations, fine dining, and breathtaking views.",
+      "Category": "5-star",
+      "Price": 1400,
+      "discountPercentage": 10,
+      "ownedBy": "tajlakepalace@gmail.com",
+      "Amenities": [
+        "Lake view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "3701",
+          "Type": "Royal Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Lake view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1800
+        },
+        {
+          "RoomNumber": "3702",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 1200
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.9,
+      "Thumbnail": "https://example.com/images/tajlakepalace-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "38",
+      "title": "The Lalit",
+      "Location": "Near Connaught Place",
+      "City": "Delhi",
+      "distance": "City Center",
+      "Description": "Experience luxury and elegance at The Lalit, New Delhi. Enjoy world-class amenities, fine dining, and impeccable service at the heart of the capital city.",
+      "Category": "5-star",
+      "Price": 950,
+      "discountPercentage": 10,
+      "ownedBy": "thelalitdelhi@gmail.com",
+      "Amenities": [
+        "City view",
+        "Swimming pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "3801",
+          "Type": "Executive Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1200
+        },
+        {
+          "RoomNumber": "3802",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 800
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.7,
+      "Thumbnail": "https://example.com/images/thelalit-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "39",
+      "title": "The Oberoi Udaivilas",
+      "Location": "Haridasji Ki Magri",
+      "City": "Udaipur",
+      "distance": "City Center",
+      "Description": "Experience luxury like never before at The Oberoi Udaivilas, Udaipur. Set against the backdrop of Lake Pichola, this palace hotel offers opulent accommodations, exquisite dining, and unparalleled service.",
+      "Category": "5-star",
+      "Price": 1300,
+      "discountPercentage": 12,
+      "ownedBy": "oberoiudaivilas@gmail.com",
+      "Amenities": [
+        "Lake view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "3901",
+          "Type": "Premier Room with Semi-Private Pool",
+          "Capacity": 2,
+          "Amenities": [
+            "Lake view",
+            "Semi-private pool",
+            "King bed"
+          ],
+          "Price": 1600
+        },
+        {
+          "RoomNumber": "3902",
+          "Type": "Luxury Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Lake view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1800
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.9,
+      "Thumbnail": "https://example.com/images/oberoiudaivilas-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "40",
+      "title": "The Leela Palace",
+      "Location": "Old Airport Road",
+      "City": "Bangalore",
+      "distance": "City Center",
+      "Description": "Indulge in luxury and sophistication at The Leela Palace, Bangalore. Experience unmatched opulence, fine dining, and warm hospitality in the heart of the city.",
+      "Category": "5-star",
+      "Price": 1000,
+      "discountPercentage": 15,
+      "ownedBy": "leelapalaceblr@gmail.com",
+      "Amenities": [
+        "City view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "4001",
+          "Type": "Royal Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1300
+        },
+        {
+          "RoomNumber": "4002",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 900
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/leelapalaceblr-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "41",
+      "title": "The Oberoi Rajvilas",
+      "Location": "Goner Road",
+      "City": "Jaipur",
+      "distance": "City Center",
+      "Description": "Experience the grandeur of Rajasthan at The Oberoi Rajvilas, Jaipur. Set amidst 32 acres of lush gardens, this luxury resort offers royal accommodations, exquisite dining, and rejuvenating spa treatments.",
+      "Category": "5-star",
+      "Price": 1100,
+      "discountPercentage": 10,
+      "ownedBy": "oberoirajvilas@gmail.com",
+      "Amenities": [
+        "Garden view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "4101",
+          "Type": "Luxury Tent",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1400
+        },
+        {
+          "RoomNumber": "4102",
+          "Type": "Premier Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Queen bed"
+          ],
+          "Price": 1000
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.9,
+      "Thumbnail": "https://example.com/images/oberoirajvilas-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "42",
+      "title": "The Leela Palace",
+      "Location": "ITPL",
+      "City": "Bangalore",
+      "distance": "City Center",
+      "Description": "Experience unparalleled luxury and comfort at The Leela Palace, Bangalore. Indulge in exquisite dining, rejuvenating spa treatments, and unmatched hospitality.",
+      "Category": "5-star",
+      "Price": 950,
+      "discountPercentage": 10,
+      "ownedBy": "leelapalacebangalore@gmail.com",
+      "Amenities": [
+        "City view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "4201",
+          "Type": "Grand Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1200
+        },
+        {
+          "RoomNumber": "4202",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 800
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/leelapalacebangalore-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "43",
+      "title": "The Oberoi Mumbai",
+      "Location": "Nariman Point",
+      "City": "Mumbai",
+      "distance": "City Center",
+      "Description": "Experience luxury and sophistication at The Oberoi Mumbai. Enjoy breathtaking views of the Arabian Sea, luxurious accommodations, and unparalleled hospitality.",
+      "Category": "5-star",
+      "Price": 1000,
+      "discountPercentage": 12,
+      "ownedBy": "oberoimumbai@gmail.com",
+      "Amenities": [
+        "Sea view",
+        "Infinity pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "4301",
+          "Type": "Premier Ocean View Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Sea view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1200
+        },
+        {
+          "RoomNumber": "4302",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 800
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.7,
+      "Thumbnail": "https://example.com/images/oberoimumbai-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "44",
+      "title": "The Westin Kolkata",
+      "Location": "Rajarhat",
+      "City": "Kolkata",
+      "distance": "City Center",
+      "Description": "Experience modern luxury and comfort at The Westin Kolkata. Indulge in world-class amenities, delicious cuisine, and rejuvenating spa treatments.",
+      "Category": "5-star",
+      "Price": 900,
+      "discountPercentage": 15,
+      "ownedBy": "westinkolkata@gmail.com",
+      "Amenities": [
+        "City view",
+        "Swimming pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "4401",
+          "Type": "Executive Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1100
+        },
+        {
+          "RoomNumber": "4402",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 750
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.6,
+      "Thumbnail": "https://example.com/images/westinkolkata-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "45",
+      "title": "The Oberoi Cecil",
+      "Location": "Chaura Maidan",
+      "City": "Shimla",
+      "distance": "City Center",
+      "Description": "Experience colonial charm and elegance at The Oberoi Cecil, Shimla. Nestled amidst cedar forests, this heritage hotel offers luxurious accommodations, fine dining, and warm hospitality.",
+      "Category": "5-star",
+      "Price": 850,
+      "discountPercentage": 10,
+      "ownedBy": "oberoishimla@gmail.com",
+      "Amenities": [
+        "Mountain view",
+        "Swimming pool",
+        "King bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "4501",
+          "Type": "Luxury Suite",
+          "Capacity": 2,
+          "Amenities": [
+            "Mountain view",
+            "Private balcony",
+            "King bed"
+          ],
+          "Price": 1000
+        },
+        {
+          "RoomNumber": "4502",
+          "Type": "Deluxe Room",
+          "Capacity": 2,
+          "Amenities": [
+            "City view",
+            "Queen bed"
+          ],
+          "Price": 700
+        }
+      ],
+      "bookedRooms": [],
+      "Rating": 4.8,
+      "Thumbnail": "https://example.com/images/oberoishimla-thumbnail.jpg",
+      "Images": [
+        "https://example.com/images/lobby.jpg",
+        "https://example.com/images/pool.jpg",
+        "https://example.com/images/room.jpg"
+      ]
+    },
+    {
+      "id": "46",
+      "title": "Hotel Royal care",
       "Location": "thaltej",
       "City": "ahmedabad",
       "distance": "3 km from sg road",
       "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "holiday homes",
+      "Price": "1200",
+      "discountPercentage": "14",
+      "Amenities": [
+        "garden view",
+        " private balcony",
+        " king bed"
+      ],
+      "availableRooms": [],
+      "Rating": "4.5",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": []
+    },
+    {
+      "id": "47",
+      "title": "Vacation home",
+      "Location": "City Center chawk",
+      "City": "ahmedabad",
+      "distance": "Downtown",
+      "Description": "This repo contains all the folders for revision and practice purpose.",
       "Category": "apartments",
-      "Price": "400",
-      "discountPercentage": "24",
+      "Price": "1200",
+      "discountPercentage": "14",
       "Amenities": [
         "garden view",
         " private balcony",
@@ -1412,1124 +1974,234 @@
       "availableRooms": [],
       "Rating": "4.3",
       "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
-      "Images": []
+      "Images": [],
+      "reviews": [],
+      "ownedBy": "dj@gmail.com"
+    },
+    {
+      "id": "48",
+      "title": "Hotel Parimal",
+      "Location": "City Center police station",
+      "City": "Mumbai",
+      "distance": "3 km from Marine road",
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "hotels",
+      "Price": "500",
+      "discountPercentage": "15",
+      "Amenities": [
+        "garden view",
+        " private balcony",
+        " king bed"
+      ],
+      "Rating": "4.5",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": [],
+      "ownedBy": "dj@gmail.com"
+    },
+    {
+      "id": "49",
+      "title": "Hotel Parimal",
+      "Location": "City Center police station",
+      "City": "Mumbai",
+      "distance": "3 km from Marine road",
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "hotels",
+      "Price": "500",
+      "discountPercentage": "15",
+      "Amenities": [
+        "garden view",
+        " private balcony",
+        " king bed"
+      ],
+      "Rating": "4.5",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": [],
+      "ownedBy": "dj@gmail.com"
+    },
+    {
+      "id": "50",
+      "title": "Hotel Parimal",
+      "Location": "City Center police station",
+      "City": "Mumbai",
+      "distance": "3 km from Marine road",
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "hotels",
+      "Price": "500",
+      "discountPercentage": "15",
+      "Amenities": [
+        "garden view",
+        " private balcony",
+        " king bed"
+      ],
+      "Rating": "4.5",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": [],
+      "ownedBy": "dj@gmail.com"
+    },
+    {
+      "id": "51",
+      "title": "Hotel Parimal",
+      "Location": "City Center police station",
+      "City": "Mumbai",
+      "distance": "3 km from Marine road",
+      "Description": "This repo contains all the folders for revision and practice purpose.",
+      "Category": "hotels",
+      "Price": "500",
+      "discountPercentage": "15",
+      "Amenities": [
+        "garden view",
+        " private balcony",
+        " king bed"
+      ],
+      "availableRooms": [
+        {
+          "RoomNumber": "101"
+        },
+        {
+          "RoomNumber": "102"
+        },
+        {
+          "RoomNumber": "103"
+        },
+        {
+          "RoomNumber": "104"
+        },
+        {
+          "RoomNumber": "105"
+        }
+      ],
+      "Rating": "4.5",
+      "Thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D",
+      "Images": [],
+      "reviews": [],
+      "ownedBy": "dj@gmail.com"
     }
   ],
   "bookings": [
     {
-      "id": "854a",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T10:51:22.607Z",
-      "checkOutDate": "2024-04-07T10:51:22.607Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "0.8724121644942353",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:14:56.475Z",
-      "checkOutDate": "2024-04-07T11:14:56.475Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "0.9491792132775856",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:15:34.623Z",
-      "checkOutDate": "2024-04-07T11:15:34.623Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "db6f",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:16:03.968Z",
-      "checkOutDate": "2024-04-07T11:16:03.968Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "59f6",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:18:11.633Z",
-      "checkOutDate": "2024-04-07T11:18:11.633Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "26e3",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:23:10.705Z",
-      "checkOutDate": "2024-04-07T11:23:10.705Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "cea5",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:24:00.095Z",
-      "checkOutDate": "2024-04-07T11:24:00.095Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "ab30",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "e719",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "3474",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "1117",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "0d43",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "40e9",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "a6d2",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "794c",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "a99f",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "300f",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "9090",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "d562",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "a381",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "3eef",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "ea5f",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:25:18.775Z",
-      "checkOutDate": "2024-04-07T11:25:18.775Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "5774",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:07.402Z",
-      "checkOutDate": "2024-04-07T11:29:07.402Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "b77a",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:07.402Z",
-      "checkOutDate": "2024-04-07T11:29:07.402Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "9b46",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "1af4",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "84af",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "3a24",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "10c5",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "2cb2",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "3296",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "3675",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "ff7e",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "2588",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "e37a",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "b1e0",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:29:59.610Z",
-      "checkOutDate": "2024-04-07T11:29:59.610Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "e400",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:35:59.611Z",
-      "checkOutDate": "2024-04-07T11:35:59.611Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "a6a3",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:35:59.611Z",
-      "checkOutDate": "2024-04-07T11:35:59.611Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "2224",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:37:30.894Z",
-      "checkOutDate": "2024-04-07T11:37:30.894Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "d4cd",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:37:30.894Z",
-      "checkOutDate": "2024-04-07T11:37:30.894Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "7c6e",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:37:30.894Z",
-      "checkOutDate": "2024-04-07T11:37:30.894Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "370d",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:37:30.894Z",
-      "checkOutDate": "2024-04-07T11:37:30.894Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "ddad",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:37:30.894Z",
-      "checkOutDate": "2024-04-07T11:37:30.894Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "ec92",
-      "hotelId": "11",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:37:46.134Z",
-      "checkOutDate": "2024-04-07T11:37:46.134Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "e3a2",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:38:38.612Z",
-      "checkOutDate": "2024-04-07T11:38:38.612Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "d4da",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:39:14.611Z",
-      "checkOutDate": "2024-04-07T11:39:14.611Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "55f3",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:40:31.703Z",
-      "checkOutDate": "2024-04-07T11:40:31.703Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "357c",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:48:04.902Z",
-      "checkOutDate": "2024-04-07T11:48:04.902Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "5ada",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:48:04.902Z",
-      "checkOutDate": "2024-04-07T11:48:04.902Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "91e7",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:48:04.902Z",
-      "checkOutDate": "2024-04-07T11:48:04.902Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "cab8",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:51:25.617Z",
-      "checkOutDate": "2024-04-07T11:51:25.617Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "f7b1",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:51:25.617Z",
-      "checkOutDate": "2024-04-07T11:51:25.617Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "164e",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:51:25.617Z",
-      "checkOutDate": "2024-04-07T11:51:25.617Z",
-      "noOfRoom": 1,
-      "guests": 1
-    },
-    {
-      "id": "775a",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:53:26.674Z",
-      "checkOutDate": "2024-04-07T11:53:26.674Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "301"
-      ]
-    },
-    {
-      "id": "3bd0",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:53:26.674Z",
-      "checkOutDate": "2024-04-07T11:53:26.674Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "301"
-      ]
-    },
-    {
-      "id": "b06a",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:54:29.641Z",
-      "checkOutDate": "2024-04-07T11:54:29.641Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "a798",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:54:29.641Z",
-      "checkOutDate": "2024-04-07T11:54:29.641Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "1c29",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:54:29.641Z",
-      "checkOutDate": "2024-04-07T11:54:29.641Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "6711",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:54:29.641Z",
-      "checkOutDate": "2024-04-07T11:54:29.641Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "3426",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:54:29.641Z",
-      "checkOutDate": "2024-04-07T11:54:29.641Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "c64e",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:54:29.641Z",
-      "checkOutDate": "2024-04-07T11:54:29.641Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "a4ce",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:55:06.425Z",
-      "checkOutDate": "2024-04-07T11:55:06.425Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": []
-    },
-    {
-      "id": "c626",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:55:55.540Z",
-      "checkOutDate": "2024-04-07T11:55:55.540Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": []
-    },
-    {
-      "id": "322a",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:55:55.540Z",
-      "checkOutDate": "2024-04-07T11:55:55.540Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": []
-    },
-    {
-      "id": "91c3",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:55:55.540Z",
-      "checkOutDate": "2024-04-07T11:55:55.540Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": []
-    },
-    {
-      "id": "716a",
-      "hotelId": "13",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T11:55:55.540Z",
-      "checkOutDate": "2024-04-07T11:55:55.540Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": []
-    },
-    {
-      "id": "f5a0",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:24.738Z",
-      "checkOutDate": "2024-04-07T12:07:24.738Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "73d3",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:24.738Z",
-      "checkOutDate": "2024-04-07T12:07:24.738Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "1a61",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:24.738Z",
-      "checkOutDate": "2024-04-07T12:07:24.738Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "24da",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:24.738Z",
-      "checkOutDate": "2024-04-07T12:07:24.738Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "b6f6",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:24.738Z",
-      "checkOutDate": "2024-04-07T12:07:24.738Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "6e15",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:55.135Z",
-      "checkOutDate": "2024-04-07T12:07:55.135Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "6293",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:07:55.135Z",
-      "checkOutDate": "2024-04-07T12:07:55.135Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "501"
-      ]
-    },
-    {
-      "id": "0ae9",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:08:12.056Z",
-      "checkOutDate": "2024-04-07T12:08:12.056Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "502"
-      ]
-    },
-    {
-      "id": "6d32",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:08:12.056Z",
-      "checkOutDate": "2024-04-07T12:08:12.056Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "502"
-      ]
-    },
-    {
-      "id": "8a21",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:08:31.157Z",
-      "checkOutDate": "2024-04-07T12:08:31.157Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "502"
-      ]
-    },
-    {
-      "id": "5352",
-      "hotelId": "5",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:08:31.157Z",
-      "checkOutDate": "2024-04-07T12:08:31.157Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "502"
-      ]
-    },
-    {
-      "id": "3697",
-      "hotelId": "1",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:09:46.557Z",
-      "checkOutDate": "2024-04-07T12:09:46.557Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "101"
-      ]
-    },
-    {
-      "id": "27eb",
-      "hotelId": "1",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:09:46.557Z",
-      "checkOutDate": "2024-04-07T12:09:46.557Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "101"
-      ]
-    },
-    {
-      "id": "d090",
-      "hotelId": "1",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T12:10:41.819Z",
-      "checkOutDate": "2024-04-07T12:10:41.819Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "102"
-      ]
-    },
-    {
-      "id": "23c4",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "954c",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "a089",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "fb56",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "7f2c",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "14d6",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "2a60",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "2d22",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "164f",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "7a9f",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "fad3",
-      "hotelId": "2",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-06T18:30:00.000Z",
-      "checkOutDate": "2024-04-08T18:30:00.000Z",
-      "noOfRoom": 2,
-      "guests": 2,
-      "allocatedRooms": [
-        "201",
-        "202"
-      ]
-    },
-    {
-      "id": "ce8b",
-      "hotelId": "3",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T18:41:24.580Z",
-      "checkOutDate": "2024-04-07T18:41:24.580Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "301"
-      ]
-    },
-    {
-      "id": "19bd",
-      "hotelId": "3",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T18:41:40.405Z",
-      "checkOutDate": "2024-04-07T18:41:40.405Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "c179",
-      "hotelId": "3",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T18:41:40.405Z",
-      "checkOutDate": "2024-04-07T18:41:40.405Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "d8ed",
-      "hotelId": "3",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-07T18:41:40.405Z",
-      "checkOutDate": "2024-04-07T18:41:40.405Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "302"
-      ]
-    },
-    {
-      "id": "0e85",
-      "hotelId": "9",
-      "userId": "1",
-      "bookingId": 1,
-      "checkInDate": "2024-04-08T04:29:29.490Z",
-      "checkOutDate": "2024-04-08T04:29:29.490Z",
-      "noOfRoom": 1,
-      "guests": 1,
-      "allocatedRooms": [
-        "901"
-      ]
-    },
-    {
-      "id": "4afb",
+      "id": "3353",
+      "hotel": {
+        "id": "25",
+        "title": "Tranquil Forest Retreat",
+        "Location": "Forest Reserve",
+        "City": "Coorg",
+        "distance": "Forest",
+        "Description": "Find peace and tranquility at our forest retreat in Coorg. Immerse yourself in the lush greenery of the Western Ghats and listen to the melodies of nature. Explore the nearby coffee plantations and spice gardens. Unwind in our eco-friendly cottages and reconnect with the essence of nature.",
+        "Category": "3-star",
+        "Price": 250,
+        "discountPercentage": 5,
+        "Amenities": [
+          "Forest view",
+          "Private patio",
+          "Queen bed"
+        ],
+        "availableRooms": [],
+        "bookedRooms": [],
+        "Rating": 4.2,
+        "Thumbnail": "https://example.com/images/forest-retreat-thumbnail.jpg",
+        "Images": [
+          "https://example.com/images/forest.jpg",
+          "https://example.com/images/cottage.jpg",
+          "https://example.com/images/trail.jpg"
+        ]
+      },
       "hotelId": "25",
-      "userId": "1",
+      "userId": null,
       "bookingId": 1,
-      "checkInDate": "2024-04-08T04:51:34.453Z",
-      "checkOutDate": "2024-04-08T04:51:34.453Z",
+      "checkInDate": "2024-04-09T19:22:34.963Z",
+      "checkOutDate": "2024-04-09T19:22:34.963Z",
       "noOfRoom": 1,
       "guests": 1,
       "allocatedRooms": [
-        "1401"
-      ]
+        {
+          "RoomNumber": "1402",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "status": "accepted"
+    },
+    {
+      "id": "d52f",
+      "hotel": {
+        "id": "11",
+        "title": "Sunset Paradise Resort",
+        "Location": "Tropical Island",
+        "City": "Goa",
+        "distance": "Beachfront",
+        "Description": "Escape to paradise at our luxurious beachfront resort. Enjoy stunning ocean views, gourmet dining, and relaxing spa treatments. Unwind in our spacious suites with private balconies overlooking the azure waters. Indulge in sumptuous seafood delicacies and cocktails at our beachside restaurant.",
+        "Category": "5-star",
+        "Price": 500,
+        "discountPercentage": 10,
+        "ownedBy": "dfg@gmail.com",
+        "Amenities": [
+          "Panoramic view",
+          "Fireplace",
+          "Two bedrooms (one king bed, one twin bed)"
+        ],
+        "availableRooms": [],
+        "bookedRooms": [
+          {
+            "RoomNumber": "103",
+            "Type": "Deluxe Suite",
+            "Capacity": 2,
+            "Amenities": [
+              "Ocean view",
+              "Private balcony",
+              "King bed"
+            ],
+            "Price": 500
+          }
+        ],
+        "Rating": 4.8,
+        "Thumbnail": "https://plus.unsplash.com/premium_photo-1697729600112-434ee1c7f670?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z29hfGVufDB8fDB8fHww",
+        "Images": [
+          "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29hfGVufDB8fDB8fHww",
+          "https://images.unsplash.com/photo-1581892197913-fd2e407e698a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z29hfGVufDB8fDB8fHww",
+          "https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z29hfGVufDB8fDB8fHww",
+          "https://images.unsplash.com/photo-1582972236019-ea4af5ffe587?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z29hfGVufDB8fDB8fHww"
+        ]
+      },
+      "hotelId": "11",
+      "userId": "14",
+      "bookingId": 1,
+      "checkInDate": "2024-04-11T08:08:36.767Z",
+      "checkOutDate": "2024-04-11T08:08:36.767Z",
+      "noOfRoom": 1,
+      "guests": 1,
+      "allocatedRooms": [
+        {
+          "RoomNumber": "1403",
+          "Type": "Standard Room",
+          "Capacity": 2,
+          "Amenities": [
+            "Garden view",
+            "Double bed"
+          ],
+          "Price": 150
+        }
+      ],
+      "status": "pending"
     }
   ],
   "hotelowner": [
-    {},
     {
-      "id": "d92b",
-      "firstName": "vats",
-      "lastName": "bhatti",
-      "hotelName": "Hotel Paradise",
-      "email": "dfg@gmail.com",
-      "password": "Vats@123",
-      "categoriesToOffer": []
+      "id": "6e01",
+      "firstName": "Dipak",
+      "lastName": "Karmur",
+      "hotelName": "hotel heaven",
+      "email": "dj@gmail.com",
+      "password": "Dj@123",
+      "categoriesToOffer": [],
+      "savedHotels": []
     }
   ]
 }

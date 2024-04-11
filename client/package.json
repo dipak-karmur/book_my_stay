@@ -12,6 +12,8 @@
   "dependencies": {
     "@redux-devtools/extension": "^3.3.0",
     "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "date-fns": "^3.6.0",
     "formik": "^2.4.5",
     "react": "^18.2.0",
@@ -25,6 +27,7 @@
     "react-router-dom": "^6.22.2",
     "react-toastify": "^10.0.5",
     "redux": "^5.0.1",
+    "tailwind-merge": "^2.2.2",
     "yup": "^1.4.0"
   },
   "devDependencies": {

@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { format } from "date-fns";
-import { addBooking, updateHotel } from "../../utils/Axios/RequestBuilder";
+import { addBooking, getHotels, updateHotel } from "../../utils/Axios/RequestBuilder";
 import { toast } from "react-toastify";
+import API from "../../utils/Axios/api";
 
 const UserDetails = () => {
   const location = useLocation();
   const hotelData = location.state;
+  const [oneHotelData,setOneHotelData] = useState([]);
   const searchData = useSelector((state) => state.searchData);
   const user = useSelector((state) => state.role.user);
   //const bookings = useSelector((state)=> state.bookings);
   console.log(hotelData);
 
+  useEffect(() => {
+    async function fetchoneHotelData() {
+      const { success, data, error } = await API.get(`/hotels/${hotelData.id}`);
+      console.log(data);
+      setOneHotelData(data);
+    }
+    fetchoneHotelData(); // Invoke the function here
+  }, [hotelData.id]);
+  console.log(hotelData.id);
+  console.log(oneHotelData)
   const tripStartDate = searchData.date?.[0]?.startDate
     ? new Date(searchData.date[0].startDate)
     : new Date();
@@ -32,22 +44,22 @@ const UserDetails = () => {
   const children = searchData.options?.children || 0;
   let total = 0;
   !children
-    ? (total = nights * adults * rooms * hotelData.Price)
-    : (total = (nights * adults * rooms * hotelData.Price * children) / 2);
+    ? (total = nights * adults * rooms * oneHotelData.Price)
+    : (total = (nights * adults * rooms * oneHotelData.Price * children) / 2);
 
   const taxes = (total * 12) / 100;
  
 
-  const beforeDiscount = total + (total * hotelData.discountPercentage) / 100;
+  const beforeDiscount = total + (total * oneHotelData.discountPercentage) / 100;
 
-  //     const availableRoom = hotelData.availableRooms;
+  //     const availableRoom = oneHotelData.availableRooms;
   //    let allocation = [];
   //    let i=0;
   //    let requiredRooms = rooms
   //     if (availableRoom.length > 0 && availableRoom.length >= rooms) {
   //       while(requiredRooms){
   //           allocation.push(availableRoom[i].RoomNumber);
-  //           hotelData.availableRooms.shift()
+  //           oneHotelData.availableRooms.shift()
   //           requiredRooms--;
   //           i++;
   //       }
@@ -60,43 +72,47 @@ const UserDetails = () => {
 
   async function bookRoom() {
    
-
+    
     let allocation = [];
-    let availableRoomsCopy = [...hotelData.availableRooms]; // Create a copy of available rooms
+    
+    let availableRoomsCopy = [...oneHotelData.availableRooms]; // Create a copy of available rooms
     console.log(availableRoomsCopy);
 
     if (availableRoomsCopy.length >= rooms) {
       allocation = availableRoomsCopy
         .slice(0, rooms)
-        .map((room) => room.RoomNumber); // Allocate rooms
+        .map((room) => room); // Allocate rooms
       availableRoomsCopy.splice(0, rooms); // Remove allocated rooms from copy
     } else {
       toast.error("Sufficient Rooms are not available!");
     }
 
     console.log(availableRoomsCopy);
-    const hotelData2 = { ... hotelData, availableRooms: availableRoomsCopy}
-    console.log(hotelData2)
+    
+    const oneHotelData2 = { ... oneHotelData, availableRooms: availableRoomsCopy}
+    console.log(oneHotelData2)
     const newBooking = {
         //   id: Math.random(4),
-        hotelId: hotelData.id,
+        hotel: oneHotelData2,
+        hotelId: oneHotelData.id,
         userId: user.id,
         bookingId: 1,
         checkInDate: tripStartDate,
         checkOutDate: tripEndDate,
         noOfRoom: rooms,
         guests: adults,
-        allocatedRooms: allocation
+        allocatedRooms: allocation,
+        status: 'pending'
       };
    if( allocation.length > 0) {
     try {
         const { success, data, error } = await addBooking(newBooking);
-        const { successMsg, newData, hotelError } = await updateHotel(hotelData2);
+        const { successMsg, newData, hotelError } = await updateHotel(oneHotelData2);
         if (hotelError) {
           console.log(hotelError);
         }
   
-        if (successMsg) {
+        if (success) {
           toast.success("Booking Successfull!");
         }
       } catch (error) {
@@ -106,6 +122,18 @@ const UserDetails = () => {
     toast.error('sorry for inconvenience!')
    }
 
+   const handleRefresh = async () => {
+    try {
+      const { success, data, error } = await API.get(`/hotels/${hotelData.id}`);
+      
+        setOneHotelData(data); // Update oneHotelData state with fetched data
+        
+      
+    } catch (error) {
+      
+    }
+  };
+  handleRefresh()
   }
 
   return (
@@ -148,9 +176,9 @@ const UserDetails = () => {
               <div className="flex flex-col flex-wrap gap-1 justify-start items-start mx-auto">
                 <h4>Hotel</h4>
                 <h2 className="text-lg font-medium text-gray-600">
-                  {hotelData.title}
+                  {oneHotelData.title}
                 </h2>
-                <h4>{hotelData.City}</h4>
+                <h4>{oneHotelData.City}</h4>
               </div>
               <hr className="border-white border-2 my-6" />
               <div className="flex flex-wrap gap-1 justify-center mx-auto flex-col items-start">
@@ -190,15 +218,15 @@ const UserDetails = () => {
                   <span className="font-semibold">{user.email}</span>
                 </p>
                 <p className="text-gray-800 text-lg ">Billing details:</p>
-                <h4>one Room Price: ${hotelData.Price}</h4>
+                <h4>one Room Price: ${oneHotelData.Price}</h4>
                 {children ? (
                   <h4>
-                    ${hotelData.Price} X {nights} night X {adults} adult X{" "}
-                    {rooms} room X {children / 2} children{" "}
+                    ${oneHotelData.Price} X {nights} night X {adults} adult X{" "}
+                    {rooms} room {" "}
                   </h4>
                 ) : (
                   <h4>
-                    ${hotelData.Price} X {nights} night X {adults} adult X{" "}
+                    ${oneHotelData.Price} X {nights} night X {adults} adult X{" "}
                     {rooms} room{" "}
                   </h4>
                 )}

@@ -76,6 +76,19 @@ import UserBookings from '../Components/pages/UserBookings';
 import HotelOwnerRegister from '../Components/pages/Register/HotelOwnerRegister';
 import OwnerPrivateRoute from '../private-public-route/OwnerPrivateRoute';
 import RegisterProperty from '../Components/pages/Register/RegisterProperty';
+import OwnerProperties from '../Components/pages/OwnerProperties';
+import OwnerDashboardBookings from '../Components/pages/OwnerDashboardBookings';
+import AdminPrivateRoute from '../private-public-route/AdminPrivateRoute';
+import Users from '../Components/pages/AdminDashBoard/Users';
+import UpdateUser from '../Components/pages/AdminDashBoard/UpdateUser';
+import Hotels from '../Components/pages/AdminDashBoard/Hotels';
+import UpdateHotel from '../Components/pages/AdminDashBoard/UpdateHotels';
+import HotelOwners from '../Components/pages/AdminDashBoard/HotelOwners';
+import UpdateHotelOwner from '../Components/pages/AdminDashBoard/UpdateHotelOwner';
+import OwnerAcceptedBookings from '../Components/pages/OwnerAcceptedBookings';
+import RegisterCategories from '../Components/pages/Register/RegisterCategories';
+import Categories from '../Components/pages/AdminDashBoard/Categories';
+import UpdateCategories from '../Components/pages/AdminDashBoard/UpdateCategories'
 
 export const Router = () => {
     const role = useSelector((state)=> state.role);
@@ -98,8 +111,9 @@ export const Router = () => {
                     element: <UserRegister/>
                 },
                 {
-                    path: '/hotelownerregister',
+                    path: '/ownerregister',
                     element: <HotelOwnerRegister/>
+                    // element:<div> hello</div>
                 },
                 {
                   
@@ -135,7 +149,65 @@ export const Router = () => {
                         {
                             path: '/register-property',
                             element: <RegisterProperty />,
+                        },
+                        {
+                            path: '/ownerproperties',
+                            element: <OwnerProperties />,
+                        },
+                        {
+                            path: '/acceptrejectbookings',
+                            element: <OwnerDashboardBookings />,
+                        },
+                        {
+                            path: '/accepted-bookings',
+                            element: <OwnerAcceptedBookings />,
+                        },
+                        {
+                            path: '/admin-update-hotels/:hotelId',
+                            element: <UpdateHotel />,
+                        },
+                    ]
+                },
+                {
+                    element: <AdminPrivateRoute isAuth={role.admin !== null ? true : false} />,
+                    children:[
+                        {
+                            path: '/adminusersdashboard',
+                            element: <Users />,
+                        },
+                        {
+                            path: '/admin-update-users/:userId',
+                            element: <UpdateUser />,
+                        },
+                        {
+                            path: '/adminhotelsdashboard',
+                            element: <Hotels/>,
+                        },
+                        {
+                            path: '/admin-update-hotels/:hotelId',
+                            element: <UpdateHotel />,
+                        },
+                        {
+                            path: '/adminhotelownersdashboard',
+                            element: <HotelOwners />,
+                        },
+                        {
+                            path: '/admin-update-hotelowners/:ownerId',
+                            element: <UpdateHotelOwner />,
+                        },
+                        {
+                            path: '/admin-create-category',
+                            element: <RegisterCategories />,
+                        },
+                        {
+                            path: '/admin-update-category',
+                            element: <Categories />,
+                        },
+                        {
+                            path: '/admin-update-category/:categoryId',
+                            element: <UpdateCategories />,
                         }
+                       
                     ]
                 },
                 {

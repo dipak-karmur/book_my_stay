@@ -13,6 +13,7 @@ import {
   addHotelOwner,
   getUsers,
   getHotelOwners,
+  updateHotelOwnerFromAdmin,
 } from "../../../utils/Axios/RequestBuilder";
 
 const passwordRules =
@@ -51,7 +52,37 @@ const hotelOwnerSchema = yup.object({
     .oneOf([yup.ref("password")], "*Passwords must match"),
 });
 
-const HotelOwnerRegister = () => {
+const hotelOwnerSchemaAdmin = yup.object({
+  firstName: yup
+    .string()
+    .required("*required")
+    .min(2, "*Name must contain atleast 2 characters")
+    .max(15, "*Name must contain less than 15 characters")
+    .trim(),
+  lastName: yup
+    .string()
+    .required("*required")
+    .min(2, "*Name must contain atleast 2 characters")
+    .max(15, "*Name must contain less than 15 characters")
+    .trim(),
+  hotelName: yup
+    .string()
+    .required("*required")
+    .min(5, "*Hotel name must contain atleast 5 characters")
+    .trim(),
+
+  email: yup.string().required("*required").email("*Email is not valid").trim(),
+  password: yup
+    .string()
+    .required("*required")
+    .matches(
+      passwordRules,
+      "*Password must contain 1 UpperCase, 1 Lowercase, 1 special characters and 1 number"
+    )
+ 
+});
+
+const HotelOwnerRegister = ({ isFromAdmin = false, hotelOwnerData }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -62,6 +93,57 @@ const HotelOwnerRegister = () => {
   const [hotelOwners, setHotelOwners] = useState([]);
   //   const [showPass, setShowPass] = useState(false);
   //   const [showConfirmPass, setShowConfirmPass] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        dispatch(setLoader(true));
+  
+        // Fetch users and hotel owners data
+        const { success: usersSuccess, data: usersData, error: userError } = await getUsers();
+        const { success: ownersSuccess, data: ownersData, error: ownerError } = await getHotelOwners();
+  
+        // Check if data fetching was successful
+        if (usersSuccess && ownersSuccess) {
+          setUsers(usersData || []); // Make sure to handle null/undefined data
+          setHotelOwners(ownersData || []); // Make sure to handle null/undefined data
+        } else {
+          throw new Error(userError || ownerError || 'Failed to fetch data');
+        }
+      } catch (error) {
+        console.log('Failed to fetch data: ', error);
+      } finally {
+        dispatch(setLoader(false));
+      }
+    };
+  
+    fetchData();
+  }, [dispatch, isAuth, navigate]);
+
+  let initialValuesOwner = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    hotelName:"",
+    password: "",
+    c_password: "",
+  };
+
+  // let initialValuesAdmin = {
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   password: "",
+  // };
+  const initialValuesAdmin = {
+    firstName: hotelOwnerData?.firstName || "",
+    lastName: hotelOwnerData?.lastName || "",
+    hotelName: hotelOwnerData?.hotelName || "",
+    email: hotelOwnerData?.email || "",
+    password: hotelOwnerData?.password || "",
+    c_password: "",
+  };
+
+  
 
   const {
     values,
@@ -72,21 +154,65 @@ const HotelOwnerRegister = () => {
     handleBlur,
     handleReset,
   } = useFormik({
-    initialValues: {
-      firstName: "",
-      lastName: "",
-      hotelName: "",
-      email: "",
-      password: "",
-      c_password: "",
-    },
-    validationSchema: hotelOwnerSchema,
+  
+    initialValues: !isFromAdmin ? initialValuesOwner : initialValuesAdmin,
+    validationSchema: !isFromAdmin ? hotelOwnerSchema : hotelOwnerSchemaAdmin,
     onSubmit,
   });
+
+  hotelOwnerData?.firstName !== "" && !values.firstName
+  ? (values.firstName = hotelOwnerData?.firstName) && (hotelOwnerData.firstName = "")
+  : null;
+
+hotelOwnerData?.lastName !== "" && !values.lastName
+  ? (values.lastName = hotelOwnerData?.lastName) && (hotelOwnerData.lastName = "")
+  : null;
+
+  hotelOwnerData?.hotelName !== "" && !values.hotelName
+  ? (values.hotelName = hotelOwnerData?.hotelName) && (hotelOwnerData.hotelName = "")
+  : null;
+
+hotelOwnerData?.email !== "" && !values.email
+  ? (values.email = hotelOwnerData?.email) && (hotelOwnerData.email = "")
+  : null;
+
+hotelOwnerData?.password !== "" && !values.password
+  ? (values.password = hotelOwnerData?.password) && (hotelOwnerData.password = "")
+  : null;
 
   async function onSubmit(values) {
     const { firstName, lastName, hotelName, email, password } = values;
     console.log(values);
+
+    if (isFromAdmin && hotelOwnerData) {
+      console.log(hotelOwnerData)
+      const newHotelOwnerFromAdmin = {
+        //id: hotelOwnerData?.id,
+          firstName: values.firstName.trim(),
+          lastName: values.lastName.trim(),
+          hotelName:values.hotelName.trim(),
+          email: values.email,
+          password: values.password.trim(),
+          savedHotels: [],
+      }
+      try {
+        dispatch(setLoader(true));
+        const { success, data, error } = await updateHotelOwnerFromAdmin( hotelOwnerData.id,newHotelOwnerFromAdmin);
+        if (success) {
+          toast.success("hotel owner updated successfully");
+          handleReset();
+          navigate("/adminhotelownersdashboard");
+        } else {
+          console.log("Failed to update hotel owner", error);
+          toast.error("Problem for updating user, Please try after some time!");
+        }
+      } catch (error) {
+        console.log("Failed to update hotel owner", error);
+      } finally {
+        dispatch(setLoader(false));
+      }
+      return;
+    }
 
     const emailExistsInUsers = users.findIndex(
       (user) => user.email === values.email
@@ -95,9 +221,8 @@ const HotelOwnerRegister = () => {
       (owner) => owner.email === values.email
     );
 
-    console.log(emailExistsInHotelOwners);
-    console.log(emailExistsInUsers);
-    if (emailExistsInUsers === -1 && emailExistsInHotelOwners === -1) {
+    
+    if (emailExistsInUsers === -1 || emailExistsInHotelOwners === -1 ) {
       let newHotelOwner = {
         // id:
         //   sellers.length !== 0
@@ -131,72 +256,12 @@ const HotelOwnerRegister = () => {
         dispatch(setLoader(false));
       }
     } else {
-      // user exists already
-      toast.error("User already exists!!");
+      // hotel ownerexists already
+      toast.error("hotel owneralready exists!!");
       handleReset();
     }
   }
-
-  //   useEffect(() => {
-  //     // if looged in then don't give access to this page
-  //     isAuth ? navigate("/") : null;
-
-  //     (async () => {
-  //       const {
-  //         success: usersSuccess,
-  //         data: usersData,
-  //         error: userError,
-  //       } = await getUsers();
-  //       const {
-  //         success: Success,
-  //         data: ownerData,
-  //         error: Error,
-  //       } = await getHotelOwners();
-
-  //       setUsers(usersData);
-  //       setHotelOwners(ownerData);
-  //     })();
-  //   }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      // if logged in, then don't give access to this page
-      if (isAuth) {
-        navigate("/");
-        return;
-      }
-
-      try {
-        dispatch(setLoader(true));
-
-        // Fetch users and hotel owners data
-        const {
-          success: usersSuccess,
-          data: usersData,
-          error: userError,
-        } = await getUsers();
-        const {
-          success: ownersSuccess,
-          data: ownersData,
-          error: ownerError,
-        } = await getHotelOwners();
-
-        // Check if data fetching was successful
-        if (usersSuccess && ownersSuccess) {
-          setUsers(usersData);
-          setHotelOwners(ownersData);
-        } else {
-          throw new Error(userError || ownerError || "Failed to fetch data");
-        }
-      } catch (error) {
-        console.log("Failed to fetch data: ", error);
-      } finally {
-        dispatch(setLoader(false));
-      }
-    };
-
-    fetchData();
-  }, [dispatch, isAuth, navigate]);
+ 
 
   if (loader) {
     return <Loader />;
@@ -237,6 +302,7 @@ const HotelOwnerRegister = () => {
                       id="firstName"
                       name="firstName"
                       type="text"
+                      value={values.firstName}
                       placeholder="First Name"
                       onChange={handleChange}
                       onBlur={handleBlur}
@@ -261,6 +327,7 @@ const HotelOwnerRegister = () => {
                       id="lastName"
                       name="lastName"
                       type="text"
+                      value={values.lastName}
                       placeholder="Last Name"
                       onChange={handleChange}
                       onBlur={handleBlur}
@@ -286,6 +353,7 @@ const HotelOwnerRegister = () => {
                     id="hotelName"
                     name="hotelName"
                     type="text"
+                     value={values.hotelName}
                     placeholder="Hotel Name"
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -310,6 +378,7 @@ const HotelOwnerRegister = () => {
                     id="email"
                     name="email"
                     type="email"
+                     value={values.email}
                     placeholder="Email"
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -333,6 +402,7 @@ const HotelOwnerRegister = () => {
                       id="password"
                       name="password"
                       type="password"
+                       value={values.password}
                       placeholder="Random@719"
                       onChange={handleChange}
                       onBlur={handleBlur}
