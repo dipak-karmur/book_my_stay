@@ -48,69 +48,7 @@ const UserBookings = () => {
     console.log(bookingsData);
   }, [bookingsData]);
 
-  //   async function deleteBooking(hotel,booking){
-  //     // try {
-  //     //     console.log(booking)
-  //     //     const {success,error} = await deleteBooking(booking.id);
-  //     //     const hotelAvailableRooms = hotel.availableRooms.push(booking.allocatedRooms)
-  //     //     console.log(hotelAvailableRooms)
-  //     // const updatedHotel =  { ...hotel, availableRooms: hotelAvailableRooms}
-  //     //     const {successMsg,errorMsg}= await updatedHotel(updatedHotel);
-
-  //     //     if(success && successMsg){
-  //     //         toast.success('Booking deleted success!');
-  //     //     }
-  //     // } catch (error) {
-  //     //     toast.error(error.message);
-  //     //     console.log(error)
-  //     // }
-
-  //     try {
-  //         console.log(booking);
-  //         const { success,data, error } = await deleteBooking(booking.id);
-  //         const hotelAvailableRooms = [...hotel.availableRooms, ...booking.allocatedRooms];
-  //         console.log(hotelAvailableRooms);
-  //         const updatedHotel = { ...hotel, availableRooms: hotelAvailableRooms };
-  //         const { successMsg, errorMsg } = await updateHotel(updatedHotel);
-  //         if (success && successMsg) {
-  //           toast.success("Booking deleted successfully!");
-  //         }
-  //       } catch (error) {
-  //         toast.error(error.message);
-  //         console.log(error);
-  //       }
-
-  //   }
-
-  // async function fetchHotels(){
-
-  // }
-  // fetchHotels()
-  //   async function deleteBookingHandler(hotel, booking) { // Renamed function to avoid conflict
-  //     try {
-  //       console.log(booking);
-  //       const { success, error } = await DeleteBooking(booking.id);
-  //       const hotelAvailableRooms = [...hotel.availableRooms, ...booking.allocatedRooms]; // Use spread operator to concatenate arrays
-  //       console.log(hotelAvailableRooms);
-  //       const updatedHotel = { ...hotel, availableRooms: hotelAvailableRooms };
-  //       const { successMsg, errorMsg } = await updateHotel(updatedHotel); // Use updateHotel function
-  //       if (success && successMsg) {
-  //         toast.success("Booking deleted successfully!");
-  //       }
-  //     } catch (error) {
-  //       toast.error(error.message);
-  //       console.log(error);
-  //     }
-
-  //         try {
-  //           const { success, data, error } = await API.get(`/bookings/${booking.id}`);
-
-  //             setBookingsData(data);
-
-  //         } catch (error) {
-
-  //         }
-  //       };
+  
 
   async function deleteBookingHandler(hotel, booking) {
     try {
@@ -170,7 +108,7 @@ const UserBookings = () => {
                   Allocated Room Numbers Are:
                   <ul className="text-lg text-semibold text-gray-900 flex  items-center justify-center">
                     {booking.allocatedRooms?.map((room) => {
-                      return <li>{room.RoomNumber}</li>;
+                      return <li>{room.RoomNumber} , </li>;
                     })}
                   </ul>
                 </span>

@@ -21,7 +21,7 @@ const HotelListing = () => {
   const dispatch = useDispatch();
   const { destination } = useSelector((state) => state.searchData);
   const user = useSelector((state) => state.role.user);
-
+  
   const [currentPage, setCurrentPage] = useState(1);
   const [recordsPerPage, setRecordsPerPage] = useState(3);
 
@@ -41,7 +41,26 @@ const HotelListing = () => {
     }
     fetchHotelData();
   }, []);
-  console.log(searchResult);
+  
+  const recentSearch = JSON.parse(localStorage.getItem('recentSearch')) || [];
+
+useEffect(() => {
+  try {
+    if (searchResult.length > 0 && searchResult[0].City) {
+      const recentSearchObj = {
+        name: searchResult[0].City,
+        image: searchResult[0].Thumbnail
+      };
+      const updatedRecentSearch = [...recentSearch, recentSearchObj];
+      localStorage.setItem('recentSearch', JSON.stringify(updatedRecentSearch));
+    }
+  } catch (error) {
+    console.error("Error occurred while storing recent search:", error);
+  }
+}, [searchResult]);
+
+
+ 
   // Update search result whenever hotelData changes
   // useEffect(() => {
   //   setSearchResult(hotelData);
@@ -85,6 +104,9 @@ const HotelListing = () => {
       navigate("/login");
     }
   }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [sortingResult,searchResult])
   const shouldRenderPagination = sortingResult.length > recordsPerPage;
 
   console.log(sortingResult);
@@ -131,7 +153,7 @@ const HotelListing = () => {
             );
           })}
       </div>
-      {/* {shouldRenderPagination && ( */}
+      {shouldRenderPagination && (
       <div className="flex justify-center items-center w-auto h-10 my-6">
         <PaginationComponent
           nPages={Math.ceil(sortingResult.length / recordsPerPage)}
@@ -139,7 +161,7 @@ const HotelListing = () => {
           setCurrentPage={setCurrentPage}
         />
       </div>
-      {/* )} */}
+       )}
     </>
   );
 };

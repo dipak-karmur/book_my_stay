@@ -91,21 +91,20 @@ const HotelOwnerRegister = ({ isFromAdmin = false, hotelOwnerData }) => {
 
   const [users, setUsers] = useState([]);
   const [hotelOwners, setHotelOwners] = useState([]);
-  //   const [showPass, setShowPass] = useState(false);
-  //   const [showConfirmPass, setShowConfirmPass] = useState(false);
+ 
   useEffect(() => {
     const fetchData = async () => {
       try {
         dispatch(setLoader(true));
   
-        // Fetch users and hotel owners data
+        
         const { success: usersSuccess, data: usersData, error: userError } = await getUsers();
         const { success: ownersSuccess, data: ownersData, error: ownerError } = await getHotelOwners();
   
-        // Check if data fetching was successful
+       
         if (usersSuccess && ownersSuccess) {
-          setUsers(usersData || []); // Make sure to handle null/undefined data
-          setHotelOwners(ownersData || []); // Make sure to handle null/undefined data
+          setUsers(usersData || []); 
+          setHotelOwners(ownersData || []); 
         } else {
           throw new Error(userError || ownerError || 'Failed to fetch data');
         }
@@ -271,9 +270,9 @@ hotelOwnerData?.password !== "" && !values.password
     <div className=" ">
       <div className="container mx-auto">
         <div className="flex justify-center px-6 my-12">
-          {/* <!-- Row --> */}
+        
           <div className="w-full xl:w-3/4 lg:w-11/12 flex">
-            {/* <!-- Col --> */}
+          
             <div
               className="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
               style={{
@@ -281,7 +280,7 @@ hotelOwnerData?.password !== "" && !values.password
                   "url('https://media.istockphoto.com/id/1344771294/photo/happy-family-in-masks-enjoying-travel-together.jpg?s=612x612&w=0&k=20&c=JMGLBlMM4TyAQ1CAgDJx9igoSucyehARKkvN2rZpec0=')",
               }}
             ></div>
-            {/* <!-- Col --> */}
+            
             <div className="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
               <h3 className="pt-4 text-2xl text-center">Create an Account!</h3>
               <form

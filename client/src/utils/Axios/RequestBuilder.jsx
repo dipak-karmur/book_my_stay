@@ -165,6 +165,25 @@ export const getUsers = async () => {
       };
     }
   };
+
+  export const getCities = async () => {
+    try {
+      const response = await API.get("/cities");
+      
+      
+      return {
+        success: true,
+        data: response.data,
+        error: null,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        data: [],
+        error: error.message,
+      };
+    }
+  };
   
   export const getBookings = async () => {
     try {
