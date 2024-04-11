@@ -115,21 +115,7 @@ const HotelViewDetails = ({cancelAction,deleteAction}) => {
                 </ul>
               </div>
               <div className="mt-8 max-w-md">
-                <div className="flex items-start mt-8">
-                  <img
-                    src="https://readymadeui.com/team-2.webp"
-                    className="w-12 h-12 rounded-full border-2 border-white"
-                  />
-                  <div className="ml-3">
-                    <h4 className="text-sm font-bold">John Doe</h4>
-
-                    <p className="text-xs mt-4">
-                      The service was amazing. I never had to wait that long for
-                      my food. The staff was friendly and attentive, and the
-                      delivery was impressively prompt.
-                    </p>
-                  </div>
-                </div>
+               
                  {/* {
                   modalOn ? <Modal cancelAction={cancelAction} deleteAction={deleteAction}/> : null
                  }

@@ -195,18 +195,7 @@ const RegisterProperty = ({ isFromAdmin = false, hotelData }) => {
       const { success, error } = await addHotel(newHotel);
 
       if (success) {
-        // if (seller) {
-        //   const { success, error, data } = await updateSellerProducts(
-        //     seller,
-        //     newProduct.id.toString()
-        //   );
-        //   dispatch(setRole("seller", data));
-        //   if (success) {
-        //     navigate("/seller-products");
-        //   }
-        // } else {
-        //   navigate("/admin");
-        // }
+       
         toast.success("Property Added successfully!");
       } else {
         console.error("Error adding hotel:", error);
@@ -222,9 +211,9 @@ const RegisterProperty = ({ isFromAdmin = false, hotelData }) => {
     <div className=" ">
       <div className="container mx-auto">
         <div className="flex justify-center px-6 my-12">
-          {/* <!-- Row --> */}
+         
           <div className="w-full xl:w-3/4 lg:w-11/12 flex">
-            {/* <!-- Col --> */}
+           
             <div
               className="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
               style={{
@@ -232,7 +221,7 @@ const RegisterProperty = ({ isFromAdmin = false, hotelData }) => {
                   "url('https://media.istockphoto.com/id/1344771294/photo/happy-family-in-masks-enjoying-travel-together.jpg?s=612x612&w=0&k=20&c=JMGLBlMM4TyAQ1CAgDJx9igoSucyehARKkvN2rZpec0=')",
               }}
             ></div>
-            {/* <!-- Col --> */}
+           
             <div className="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
               <h3 className="pt-4 text-2xl text-center">Create an Account!</h3>
               <form
@@ -543,14 +532,7 @@ const RegisterProperty = ({ isFromAdmin = false, hotelData }) => {
                 </div>
                 <hr className="mb-6 border-t" />
 
-                {/* <div className="text-center">
-                  <NavLink
-                    className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-                    to="/login"
-                  >
-                    Already have an account? Login!
-                  </NavLink>
-                </div> */}
+               
               </form>
             </div>
           </div>

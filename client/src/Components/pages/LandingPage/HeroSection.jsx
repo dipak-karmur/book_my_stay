@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setSearchData } from "../../../Redux/Actions/SearchAction";
-import { getCategories } from "../../../utils/Axios/RequestBuilder";
+import { getCategories, getCities } from "../../../utils/Axios/RequestBuilder";
 import CarouselComponent from "../../Common/CarouselComponent";
 
 const HeroSection = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [categories, setCategories] = useState([]);
+  const [cities,setCities] = useState([]);
+  const recentSearch = JSON.parse(localStorage.getItem('recentSearch')) || []
 
   useEffect(() => {
     async function fetchCategory() {
@@ -20,6 +22,15 @@ const HeroSection = () => {
       }
     }
     fetchCategory();
+    async function fetchCities() {
+      try {
+        const { success, data, error } = await getCities();
+        setCities(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    }
+    fetchCities();
   }, []);
 
   const handleClick = (destination) => {
@@ -27,9 +38,42 @@ const HeroSection = () => {
     navigate("/hotels");
   };
 
+  console.log(recentSearch);
+  recentSearch.reverse()
+
   return (
     <>
-      <div className="container w-full text-2xl mx-auto  mt-40 mb-10 py-4 ">
+      <div className="container w-full text-2xl mx-auto  mt-20 mb-10 py-4 ">
+      <div className="w-[60vw] mx-auto mt-8 mb-8">
+          <div className="text-2xl font-semibold ">Your recent searches</div>
+          {/* <p className="text-base ">Pick a vibe and explore the top destinations in India</p> */}
+          <div className="flex md:flex-col flex-wrap  ">
+            <div className="flex flex-1 md:gap-4 justify-center gap-2 ">
+            <CarouselComponent>
+              {recentSearch.map((city) => {
+
+                return (
+                 
+                     <div
+                    className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 pb-8 pt-40  mx-auto mt-4 h-4 w-[25vw] md:w-[15vw] lg:w-[10vw] md:h-20 basis-1/2 cursor-pointer"
+                    onClick={() => handleClick(`${city.name}`)}
+                  >
+                    <img
+                      src={city.image}
+                      alt={city.name}
+                      class="absolute inset-0 h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <h3 className="z-10 mt-2 text-base lg:text-xl font-bold text-white  ">
+                      {city.name}
+                    </h3>
+                  </div>             
+                );
+              })}
+               </CarouselComponent>
+            </div>
+          </div>
+        </div>
         <div className="w-[60vw] mx-auto">
           <div className="text-2xl font-semibold ">Trending destinations</div>
           <p className="text-base ">
@@ -135,6 +179,36 @@ const HeroSection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                     <h3 className="z-10 mt-2 text-base lg:text-xl font-bold text-white  ">
                       {category.name}
+                    </h3>
+                  </div>             
+                );
+              })}
+               </CarouselComponent>
+            </div>
+          </div>
+        </div>
+        <div className="w-[60vw] mx-auto mt-8">
+          <div className="text-2xl font-semibold ">Explore India</div>
+          <p className="text-base ">Pick a vibe and explore the top destinations in India</p>
+          <div className="flex md:flex-col flex-wrap  ">
+            <div className="flex flex-1 md:gap-4 justify-center gap-2 ">
+            <CarouselComponent>
+              {cities.map((city) => {
+
+                return (
+                 
+                     <div
+                    className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl pl-2 pr-8 pb-8 pt-40  mx-auto mt-4 h-4 w-[25vw] md:w-[15vw] lg:w-[10vw] md:h-20 basis-1/2 cursor-pointer"
+                    onClick={() => handleClick(`${city.name}`)}
+                  >
+                    <img
+                      src={city.image}
+                      alt={city.name}
+                      class="absolute inset-0 h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <h3 className="z-10 mt-2 text-base lg:text-xl font-bold text-white  ">
+                      {city.name}
                     </h3>
                   </div>             
                 );

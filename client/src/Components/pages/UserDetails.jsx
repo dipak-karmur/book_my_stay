@@ -21,7 +21,7 @@ const UserDetails = () => {
       console.log(data);
       setOneHotelData(data);
     }
-    fetchoneHotelData(); // Invoke the function here
+    fetchoneHotelData(); 
   }, [hotelData.id]);
   console.log(hotelData.id);
   console.log(oneHotelData)
@@ -52,37 +52,21 @@ const UserDetails = () => {
 
   const beforeDiscount = total + (total * oneHotelData.discountPercentage) / 100;
 
-  //     const availableRoom = oneHotelData.availableRooms;
-  //    let allocation = [];
-  //    let i=0;
-  //    let requiredRooms = rooms
-  //     if (availableRoom.length > 0 && availableRoom.length >= rooms) {
-  //       while(requiredRooms){
-  //           allocation.push(availableRoom[i].RoomNumber);
-  //           oneHotelData.availableRooms.shift()
-  //           requiredRooms--;
-  //           i++;
-  //       }
-
-  //     }else{
-  //       toast.error('Sufficient Rooms are not available!')
-  //     }
-
-  /// booking logic
+  
 
   async function bookRoom() {
    
     
     let allocation = [];
     
-    let availableRoomsCopy = [...oneHotelData.availableRooms]; // Create a copy of available rooms
+    let availableRoomsCopy = [...oneHotelData.availableRooms]; 
     console.log(availableRoomsCopy);
 
     if (availableRoomsCopy.length >= rooms) {
       allocation = availableRoomsCopy
         .slice(0, rooms)
-        .map((room) => room); // Allocate rooms
-      availableRoomsCopy.splice(0, rooms); // Remove allocated rooms from copy
+        .map((room) => room); 
+      availableRoomsCopy.splice(0, rooms); 
     } else {
       toast.error("Sufficient Rooms are not available!");
     }
@@ -126,7 +110,7 @@ const UserDetails = () => {
     try {
       const { success, data, error } = await API.get(`/hotels/${hotelData.id}`);
       
-        setOneHotelData(data); // Update oneHotelData state with fetched data
+        setOneHotelData(data); 
         
       
     } catch (error) {
@@ -139,38 +123,9 @@ const UserDetails = () => {
   return (
     <div>
       <div className="">
-        <div className="flex items-center py-4 overflow-x-auto whitespace-nowrap mx-auto">
-          <a href="#" className="text-gray-600 dark:text-gray-200"></a>
+        
 
-          <span className="mx-5 text-gray-500 dark:text-gray-300 rtl:-scale-x-100"></span>
-
-          <a
-            href="#"
-            className="text-gray-600 dark:text-gray-200 hover:underline"
-          >
-            Account
-          </a>
-
-          <span className="mx-5 text-gray-500 dark:text-gray-300 rtl:-scale-x-100"></span>
-
-          <a
-            href="#"
-            className="text-gray-600 dark:text-gray-200 hover:underline"
-          >
-            Profile
-          </a>
-
-          <span className="mx-5 text-gray-500 dark:text-gray-300 rtl:-scale-x-100"></span>
-
-          <a
-            href="#"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
-          >
-            Settings
-          </a>
-        </div>
-
-        <div className="p-6 lg:max-w-7xl max-w-2xl max-lg:mx-auto">
+        <div className="p-6 lg:max-w-7xl max-w-2xl max-lg:mx-auto mt-8">
           <div className="grid items-start grid-cols-1 lg:grid-cols-5 gap-12">
             <div className="lg:col-span-3 bg-gray-100 w-full lg:sticky top-0 text-center p-8">
               <div className="flex flex-col flex-wrap gap-1 justify-start items-start mx-auto">
