@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import { useSelector } from "react-redux";
 import FetchData from "../../utils/Axios/FetchData";
-import SearchBar from "../layout/SearchBar";
+import SearchBar from "../layout/Header";
 import HotelCard from "../Common/HotelCard";
 import HeroSection from "./LandingPage/HeroSection";
 

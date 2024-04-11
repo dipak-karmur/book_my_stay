@@ -3,8 +3,9 @@ import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
 import API from "../../utils/Axios/api";
 import ReactStars from "react-rating-stars-component";
+import Modal from "../Common/Modal";
 
-const HotelViewDetails = () => {
+const HotelViewDetails = ({cancelAction,deleteAction}) => {
   const [data, setData] = useState(() => {
     try {
       const savedData = localStorage.getItem("hotelDetails");
@@ -14,6 +15,7 @@ const HotelViewDetails = () => {
       return {};
     }
   });
+  const [modalOn,setModalOn] = useState(false);
 
   const params = useParams();
   const navigate = useNavigate();
@@ -32,9 +34,14 @@ const HotelViewDetails = () => {
   const beforeDiscount =
     data.Price + (data.Price * data.discountPercentage) / 100;
 
-    function handleNavigate(){
-      navigate('/userdetails',{state:data})
-    }
+  function handleNavigate() {
+    navigate("/userdetails", { state: data });
+  }
+  
+  function handleModal(){
+    setModalOn(true);
+  }
+
   return (
     <>
       <div className="">
@@ -123,6 +130,15 @@ const HotelViewDetails = () => {
                     </p>
                   </div>
                 </div>
+                 {/* {
+                  modalOn ? <Modal cancelAction={cancelAction} deleteAction={deleteAction}/> : null
+                 }
+                <button
+                  className="mt-2 px-2 py-1.5 md:px-3 md:py-2 rounded-md bg-[#0071c2] text-white  hover:bg-sky-800 flex items-center gap-0.5"
+                  onClick={handleModal}
+                >
+                  Add Review
+                </button> */}
                 <button
                   className="mt-2 px-2 py-1.5 md:px-3 md:py-2 rounded-md bg-[#0071c2] text-white  hover:bg-sky-800 flex items-center gap-0.5"
                   onClick={handleNavigate}

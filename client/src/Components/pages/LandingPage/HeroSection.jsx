@@ -136,9 +136,7 @@ const HeroSection = () => {
                     <h3 className="z-10 mt-2 text-base lg:text-xl font-bold text-white  ">
                       {category.name}
                     </h3>
-                  </div>
-                 
-                 
+                  </div>             
                 );
               })}
                </CarouselComponent>

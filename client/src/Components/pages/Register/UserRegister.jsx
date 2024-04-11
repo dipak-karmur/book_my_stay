@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { NavLink, Navigate } from "react-router-dom";
-import { addUser, getUsers } from "../../../utils/Axios/RequestBuilder";
+import {
+  addUser,
+  getUsers,
+  updateUserFromAdmin,
+} from "../../../utils/Axios/RequestBuilder";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../../Common/Loader";
 import { setLoader } from "../../../Redux/Actions/Actions";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { setRole } from "../../../Redux/Actions/roleActions";
 
 const passwordRules =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,}$/;
@@ -38,11 +44,38 @@ const userSchema = yup.object({
     .oneOf([yup.ref("password")], "*Passwords must match"),
 });
 
-function UserRegister() {
-  const dispatch = useDispatch();
+const userSchemaAdmin = yup.object({
+  firstName: yup
+    .string()
+    .required("*required")
+    .min(2, "*Name must contain atleast 2 characters")
+    .max(15, "*Name must not contain more than 15 characters")
+    .trim(),
+  lastName: yup
+    .string()
+    .required("*required")
+    .min(2, "*Name must contain atleast 2 characters")
+    .max(15, "*Name must not contain more than 15 characters")
+    .trim(),
+  email: yup.string().required("*required").email("*Email is not valid").trim(),
+  password: yup
+    .string()
+    .required("*required")
+    .matches(
+      passwordRules,
+      "*Password must contain 1 UpperCase, 1 Lowercase, 1 special characters and 1 number"
+    ),
+});
 
-  const [users, setUsers] = useState([]);
+function UserRegister({ isFromAdmin = false, userData }) {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  
+
+  const { isAuth } = useSelector((state) => state.role);
+
   const { loader } = useSelector((state) => state.app);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -64,10 +97,18 @@ function UserRegister() {
     c_password: "",
   };
 
-  let initialValuesAdmin = {
-    name: "",
-    email: "",
-    password: "",
+  // let initialValuesAdmin = {
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   password: "",
+  // };
+  const initialValuesAdmin = {
+    firstName: userData?.firstName || "",
+    lastName: userData?.lastName || "",
+    email: userData?.email || "",
+    password: userData?.password || "",
+    c_password: "",
   };
 
   const {
@@ -81,10 +122,26 @@ function UserRegister() {
   } = useFormik({
     // initialValues: !isFromAdmin ? initialValuesUser : initialValuesAdmin,
     // validationSchema: !isFromAdmin ? userSchema : userSchemaAdmin,
-    initialValues: initialValuesUser,
-    validationSchema: userSchema,
+    initialValues: !isFromAdmin ? initialValuesUser : initialValuesAdmin,
+    validationSchema: !isFromAdmin ? userSchema : userSchemaAdmin,
     onSubmit,
   });
+
+  userData?.firstName !== "" && !values.firstName
+    ? (values.firstName = userData?.firstName) && (userData.firstName = "")
+    : null;
+
+  userData?.lastName !== "" && !values.lastName
+    ? (values.lastName = userData?.lastName) && (userData.lastName = "")
+    : null;
+
+  userData?.email !== "" && !values.email
+    ? (values.email = userData?.email) && (userData.email = "")
+    : null;
+
+  userData?.password !== "" && !values.password
+    ? (values.password = userData?.password) && (userData.password = "")
+    : null;
 
   async function onSubmit(values) {
     console.log(values);
@@ -96,13 +153,42 @@ function UserRegister() {
     // const emailExistsInSellers = sellers.findIndex(
     //   (seller) => seller.email === values.email
     // );
+    if (isFromAdmin && userData) {
+      console.log(userData)
+      const newUserFromAdmin = {
+        //id: userData?.id,
+          firstName: values.firstName.trim(),
+          lastName: values.lastName.trim(),
+          email: values.email,
+          password: values.password.trim(),
+          savedHotels: [],
+      }
+      try {
+        dispatch(setLoader(true));
+        const { success, data, error } = await updateUserFromAdmin( userData.id,newUserFromAdmin);
+        if (success) {
+          toast.success("User updated successfully");
+          handleReset();
+          navigate("/adminusersdashboard");
+        } else {
+          console.log("Failed to update user ", error);
+          toast.error("Problem for updating user, Please try after some time!");
+        }
+      } catch (error) {
+        console.log("Failed to update user ", error);
+      } finally {
+        dispatch(setLoader(false));
+      }
+      return;
+    }
 
     if (emailExistsInUsers === -1) {
       let userObj = {
-        id:
-          users?.length !== 0
-            ? (parseInt(users[users?.length - 1]?.id) + 1).toString()
-            : "1",
+        // id:
+        //   users?.length !== 0
+        //     ? (parseInt(users[users?.length - 1]?.id) + 1).toString()
+        //     : "1",
+        //id: '1',
         firstName: firstName.trim(),
         lastName: lastName.trim(),
         email: email.trim(),
@@ -116,10 +202,10 @@ function UserRegister() {
           const { success, data, error } = await addUser(userObj);
           if (success) {
             console.log("success");
-            // !isFromAdmin && dispatch(setRole("user", userObj));
+            !isFromAdmin && dispatch(setRole("user", userObj));
             handleReset();
             toast.success("User registered successfully");
-            // !isFromAdmin ? navigate("/") : navigate("/admin-users");
+            !isFromAdmin ? navigate("/") : navigate("/admin-users");
           } else {
             console.log("Failed to register user ", error);
             toast.error(
@@ -179,6 +265,7 @@ function UserRegister() {
                         className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:border-[#42a4ee]"
                         id="firstName"
                         name="firstName"
+                        value={values.firstName}
                         type="text"
                         placeholder="First Name"
                         onChange={handleChange}
@@ -203,6 +290,7 @@ function UserRegister() {
                         className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:border-[#42a4ee]"
                         id="lastName"
                         name="lastName"
+                        value={values.lastName}
                         type="text"
                         placeholder="Last Name"
                         onChange={handleChange}
@@ -229,6 +317,7 @@ function UserRegister() {
                       id="email"
                       name="email"
                       type="email"
+                      value={values.email}
                       placeholder="Email"
                       onChange={handleChange}
                       onBlur={handleBlur}
@@ -252,6 +341,7 @@ function UserRegister() {
                         id="password"
                         name="password"
                         type="password"
+                        value={values.password}
                         placeholder="Random@719"
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -276,6 +366,7 @@ function UserRegister() {
                         id="c_password"
                         name="c_password"
                         type="password"
+                        value={values.c_password}
                         placeholder="******************"
                         onChange={handleChange}
                         onBlur={handleBlur}

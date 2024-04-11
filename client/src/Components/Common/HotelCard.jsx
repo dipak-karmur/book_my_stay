@@ -8,8 +8,9 @@ import API from "../../utils/Axios/api";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { format } from "date-fns";
+import ButtonComponent from "./ButtonComponent";
 
-const HotelCard = ({ hotel }) => {
+const HotelCard = ({ hotel,children }) => {
   const user = useSelector((state) => state.role.user);
   const searchData = useSelector((state) => state.searchData);
 
@@ -35,36 +36,36 @@ const HotelCard = ({ hotel }) => {
   const total = nights * adults * hotel.Price;
   const taxes = (total * 12) / 100;
 
-  async function addToSavedHotel(hotel) {
-    const savedHotelsList = user.savedHotels;
-    if (user) {
-      const alreadysaved = savedHotelsList.findIndex(
-        (item) => item.id === hotel.id
-      );
-      if (alreadysaved === -1) {
-        user.savedHotels.push(hotel);
-        setRole("user", user);
-        try {
-          await API.patch(`/users/${user.id}`, user);
-          dispatch(setRole("user", user));
-          toast.success("Added to Saved Hotels!");
-        } catch (error) {
-          console.log(error);
-        }
-      } else {
-        const updatedHotels = user.savedHotels.filter(
-          (item) => item.id != hotel.id
-        );
-        const updatedUser = { ...user, savedHotels: updatedHotels };
-        await API.patch(`/users/${user.id}`, updatedUser);
-        dispatch(setRole("user", updatedUser));
-        toast.success("Removed from Saved Hotels!");
-      }
-    } else {
-      toast.warn("Please Login First");
-      navigate("/login");
-    }
-  }
+  // async function addToSavedHotel(hotel) {
+  //   const savedHotelsList = user.savedHotels;
+  //   if (user) {
+  //     const alreadysaved = savedHotelsList.findIndex(
+  //       (item) => item.id === hotel.id
+  //     );
+  //     if (alreadysaved === -1) {
+  //       user.savedHotels.push(hotel);
+  //       setRole("user", user);
+  //       try {
+  //         await API.patch(`/users/${user.id}`, user);
+  //         dispatch(setRole("user", user));
+  //         toast.success("Added to Saved Hotels!");
+  //       } catch (error) {
+  //         console.log(error);
+  //       }
+  //     } else {
+  //       const updatedHotels = user.savedHotels.filter(
+  //         (item) => item.id != hotel.id
+  //       );
+  //       const updatedUser = { ...user, savedHotels: updatedHotels };
+  //       await API.patch(`/users/${user.id}`, updatedUser);
+  //       dispatch(setRole("user", updatedUser));
+  //       toast.success("Removed from Saved Hotels!");
+  //     }
+  //   } else {
+  //     toast.warn("Please Login First");
+  //     navigate("/login");
+  //   }
+  // }
 
   function handleNavigate() {
     navigate(`/hotels/${hotel.id}`);
@@ -72,11 +73,11 @@ const HotelCard = ({ hotel }) => {
   return (
     <div>
       <div className="">
-        <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white mb-4">
           <div className="w-full md:w-1/3 bg-white grid place-items-center">
             <img
               src={hotel.Thumbnail}
-              alt="tailwind logo"
+              alt="hotel"
               className="rounded-xl"
             />
           </div>
@@ -100,7 +101,7 @@ const HotelCard = ({ hotel }) => {
                   {hotel.Rating}
                 </p>
               </div>
-              <button
+              {/* <button
                 className="cursor-pointer border-[1px] border-slate-300 m-2 bg-slate-100 rounded-full p-2 "
                 onClick={() => addToSavedHotel(hotel)}
               >
@@ -110,7 +111,8 @@ const HotelCard = ({ hotel }) => {
                     likedHeart() ? `text-red-600` : `text-neutral-400`
                   }`}
                 />
-              </button>
+              </button> */}
+              {children[0]}
               <div className="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
                 {hotel.Category}
               </div>
@@ -141,15 +143,18 @@ const HotelCard = ({ hotel }) => {
                 </p>
                 <p className="text-xl font-semibold "> ${total} </p>
                 <p className="text-sm">+ ${taxes} taxes and charges</p>
-                <button
-                  className="mt-2 px-2 py-1.5 md:px-3 md:py-2 rounded-md bg-[#0071c2] text-white  hover:bg-sky-800 flex items-center gap-0.5"
+                {/* <ButtonComponent
+                  //className="mt-2 px-2 py-1.5 md:px-3 md:py-2 rounded-md bg-[#0071c2] text-white  hover:bg-sky-800 flex items-center gap-0.5"
+                  
                   onClick={handleNavigate}
                 >
                   See avalaibility <IoIosArrowForward size={18} />
-                </button>
+                </ButtonComponent> */}
+                {children[1]}
               </div>
             </div>
           </div>
+          {children[2]}
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { useNavigate, NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { getUsers } from "../../../utils/Axios/RequestBuilder";
+import { getHotelOwners, getUsers } from "../../../utils/Axios/RequestBuilder";
 import { toast } from "react-toastify";
 import { setRole } from "../../../Redux/Actions/roleActions";
 
@@ -11,7 +11,7 @@ const loginSchema = yup.object({
   role: yup
     .string()
     .required("*required")
-    .oneOf(["user", "admin", "seller"], "*Please select a valid role"),
+    .oneOf(["user", "admin", "hotelowner"], "*Please select a valid role"),
   email: yup.string().required("*required").trim(),
   password: yup.string().required("*required").trim(),
 });
@@ -20,6 +20,7 @@ function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
+  const [hotelOwners,setHotelOwners]= useState([]);
 
   const {
     values,
@@ -39,6 +40,8 @@ function Login() {
     onSubmit,
   });
 
+
+
   async function onSubmit(values) {
     console.log(values);
     const { role, email, password } = values;
@@ -54,7 +57,27 @@ function Login() {
       } else {
          toast.error("Invalid credential !!");
       }
+    }else if(role=== 'hotelowner'){
+      let owner = hotelOwners.find((owner) => owner.email === email);
+      console.log(owner);
+      if (owner && owner.password === password) {
+         dispatch(setRole(role, owner));
+         toast.success(`User: ${owner.firstName} logged in successfully`);
+        navigate("/");
+      } else {
+         toast.error("Invalid credential !!");
+      }
+    }else if (role === "admin") {
+      const admin = { email, password };
+      if (email === "admin@gmail.com" && password === "Admin@123") {
+        dispatch(setRole(role, admin));
+        toast.success("Admin logged in successfully!");
+        navigate("/");
+      } else {
+        toast.error("Invalid credential !!");
+      }
     }
+
 
     handleReset();
   }
@@ -70,7 +93,14 @@ function Login() {
         error: userError,
       } = await getUsers();
 
+      const {
+        success: successMsg,
+        data: ownersData,
+        error: errorMsg,
+      } = await getHotelOwners();
+
       setUsers(usersData);
+      setHotelOwners(ownersData);
     })();
   }, []);
 
@@ -113,8 +143,8 @@ function Login() {
                     className="border-2 border-gray-400 outline-0 rounded-md mt-1 px-2 py-1 h-11 w-[min(24rem,85vw)] focus:border-[#42a4ee]"
                   >
                     <option value="user">User</option>
-                    <option value="admin">Hotel Owner</option>
-                    <option value="seller">Admin</option>
+                    <option value="hotelowner">Hotel Owner</option>
+                    <option value="admin">Admin</option>
                   </select>
                   {touched.role && errors.role ? (
                     <p className="text-[14px] text-red-700">{errors.role}</p>
